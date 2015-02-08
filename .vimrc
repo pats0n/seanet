@@ -23,7 +23,7 @@ map <F4> :q <CR>
 ":set swb=usetab
 
 " this is for pyflakes
-" highlight SpellBad term=reverse ctermbg=2
+highlight SpellBad term=reverse ctermbg=2
 
 set hlsearch
 set expandtab
