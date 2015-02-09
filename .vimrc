@@ -28,4 +28,5 @@ highlight SpellBad term=reverse ctermbg=2
 set hlsearch
 set expandtab
 
-"
+set switchbuf=useopen,usetab,newtab
+
