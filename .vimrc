@@ -11,7 +11,7 @@ call vundle#end()
 
 filetype plugin indent on
 
-au BufRead,BufNewFile *.ss set filetype=xml
+au BufRead,BufNewFile *.ds set filetype=xml
 let g:pydoc_open_cmd = 'tabnew'
 
 "set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -19,6 +19,7 @@ let g:pydoc_open_cmd = 'tabnew'
 map <F5> :wa \| make <CR>
 map <F2> :tabnew ../.. <CR>
 map <F4> :q <CR>
+map <F8> :%! astyle -A2 -F <CR> gg=G :%s/{$/{\r/g <CR> :%g/^$/,/./-j <CR><CR> :let @/= "" <CR>
 
 ":set swb=usetab
 
@@ -29,4 +30,6 @@ set hlsearch
 set expandtab
 
 set switchbuf=useopen,usetab,newtab
+
+"nnoremap <CR> :noh<CR><CR>
 

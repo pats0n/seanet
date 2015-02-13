@@ -32,6 +32,7 @@ alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
 #mts
 alias mts_root='cd $HOME/projects/mts/bin'
+alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mts_dev='cd $HOME/projects/mts/dev/strats'
 
 #rip500
@@ -44,3 +45,9 @@ esac
 
 export PATH=$HOME/bin:$PATH
 export GOPATH=$HOME
+
+
+export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
+
+
+alias matlab="matlab -nodesktop"
