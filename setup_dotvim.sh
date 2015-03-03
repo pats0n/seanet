@@ -1,4 +1,5 @@
 cd `dirname $0`
 
-cp .vimrc ..
+echo source ~/mybash/vimrc > ~/.vimrc
+
 
