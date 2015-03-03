@@ -19,7 +19,10 @@ let g:pydoc_open_cmd = 'tabnew'
 map <F5> :wa \| make <CR>
 map <F2> :tabnew ../.. <CR>
 map <F4> :q <CR>
-map <F8> :%! astyle -A2 -F <CR> gg=G :%s/{$/{\r/g <CR> :%g/^$/,/./-j <CR><CR> :let @/= "" <CR>
+
+"map <F8> :%! astyle -A2 -F --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%g/^$/,/./-j <CR><CR> :let @/= "" <CR>
+map <F8> :%! astyle -A2 -F --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%s/\s\+$//e <CR> :%s/\n\{3,}/\r\r/e <CR> 
+
 
 ":set swb=usetab
 
