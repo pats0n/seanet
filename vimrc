@@ -1,12 +1,14 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kevinw/pyflakes-vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
 
 
 call vundle#end()
