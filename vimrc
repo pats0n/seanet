@@ -9,6 +9,8 @@ Plugin 'kevinw/pyflakes-vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'kien/ctrlp.vim'
+
 
 
 call vundle#end()
