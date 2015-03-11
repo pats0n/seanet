@@ -5,11 +5,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'kevinw/pyflakes-vim'
+"Plugin 'kevinw/pyflakes-vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 
 
 
@@ -40,4 +41,12 @@ set expandtab
 set switchbuf=useopen,usetab,newtab
 
 "nnoremap <CR> :noh<CR><CR>
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
