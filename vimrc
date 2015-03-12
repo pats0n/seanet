@@ -5,14 +5,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'kevinw/pyflakes-vim'
+"Plugin 'kevinw/pyflakes-vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
-
-
+Plugin 'Lokaltog/vim-easymotion'
 
 call vundle#end()
 
@@ -51,3 +50,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_checkers =  ['']
+let g:syntastic_python_checkers =  ['pyflakes']
