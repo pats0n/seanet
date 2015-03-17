@@ -5,4 +5,5 @@ sudo apt-get install vim git rsync ssh cifs-utils openconnect pssh nfs-common me
         nmap \
         mmv \
         iperf \
-        atop
+        atop \
+        astyle 
