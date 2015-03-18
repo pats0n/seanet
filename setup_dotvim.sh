@@ -4,8 +4,10 @@ echo source ~/mybash/vimrc > ~/.vimrc
 
 mkdir -p ~/.vim/bundle
 
-git -C ~/.vim/bundle clone http://github.com/gmarik/Vundle.vim 
+cd ~/.vim/bundle
+
+git clone http://github.com/gmarik/Vundle.vim 
 
 
-
+vim -c "VundleInstall | q | q"
 
