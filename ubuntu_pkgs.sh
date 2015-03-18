@@ -6,4 +6,5 @@ sudo apt-get install vim git rsync ssh cifs-utils openconnect pssh nfs-common me
         mmv \
         iperf \
         atop \
-        astyle 
+        astyle  \
+        pyflakes 
