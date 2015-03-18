@@ -3,7 +3,7 @@
 alias vim='vim -p'
 alias vi='vim -p'
 
-export PATH=$HOME/projects/mts/bin:$HOME/projects/atsdb/bin:$HOME/projects/atste/bin:$HOME/projects/mo/bin:$PATH
+export PATH=$HOME/projects/mtsdb/bin:$HOME/projects/mts/bin:$HOME/projects/atsdb/bin:$HOME/projects/atste/bin:$HOME/projects/mo/bin:$PATH
 
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
