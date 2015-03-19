@@ -14,7 +14,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 
 
-if v:version > 702
+if v:version > 703
         Plugin 'Valloric/YouCompleteMe'
 endif
 
