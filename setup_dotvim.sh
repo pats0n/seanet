@@ -6,8 +6,8 @@ mkdir -p ~/.vim/bundle
 
 cd ~/.vim/bundle
 
-git clone http://github.com/gmarik/Vundle.vim 
+git clone https://github.com/gmarik/Vundle.vim 
 
 
-vim -c "VundleInstall | q | q"
+"vim -c "VundleInstall | q | q"
 

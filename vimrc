@@ -12,7 +12,11 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Valloric/YouCompleteMe'
+
+
+if v:version > 702
+        Plugin 'Valloric/YouCompleteMe'
+endif
 
 call vundle#end()
 
