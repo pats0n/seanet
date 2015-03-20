@@ -31,6 +31,8 @@ alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 alias mts_root='cd $HOME/projects/mts/bin'
 alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mts_dev='cd $HOME/projects/mts/dev/strats'
+alias mts_strats='cd /mnt/nas_gfs'
+
 
 #rip500
 export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
