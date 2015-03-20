@@ -46,3 +46,11 @@ export GOPATH=$HOME
 #matlab
 export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
 alias matlab="matlab -nodesktop"
+
+
+if  [[ `hostname` =~ 'grd' ]]
+then
+
+PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+
+fi
