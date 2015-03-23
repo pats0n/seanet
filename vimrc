@@ -12,6 +12,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'davidhalter/jedi-vim'
 
 
 if v:version > 703
@@ -53,6 +54,4 @@ set switchbuf=useopen,usetab,newtab
 "let g:syntastic_cpp_checkers =  ['']
 "let g:syntastic_python_checkers =  ['pyflakes']
 
-let g:ycm_confirm_extra_conf = 1
-
-
+let g:ycm_confirm_extra_conf = 0
