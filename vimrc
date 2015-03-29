@@ -16,7 +16,7 @@ Plugin 'davidhalter/jedi-vim'
 
 
 if v:version > 703
-        Plugin 'Valloric/YouCompleteMe'
+       Plugin 'Valloric/YouCompleteMe'
 endif
 
 call vundle#end()
@@ -55,3 +55,4 @@ set switchbuf=useopen,usetab,newtab
 "let g:syntastic_python_checkers =  ['pyflakes']
 
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_allow_changing_updatetime = 0
