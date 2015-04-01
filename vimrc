@@ -48,3 +48,5 @@ highlight SpellBad term=reverse ctermbg=2
 "syntastic
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ]
 let g:syntastic_python_checkers = [ 'pyflakes' ] 
+let g:syntastic_xml_checkers = [ 'xmllint' ] 
+let g:syntastic_enable_xml_checker=1
