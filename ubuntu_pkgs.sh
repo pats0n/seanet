@@ -7,4 +7,5 @@ sudo apt-get install vim git rsync ssh cifs-utils openconnect pssh nfs-common me
         iperf \
         atop \
         astyle  \
-        pyflakes 
+        pyflakes \
+        libxml2-utils
