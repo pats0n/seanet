@@ -39,7 +39,7 @@ export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
 case "$-" in
-*i*) cd mybash; git pull > /dev/null; git status -s; cd ..
+*i*) cd seanet; git pull > /dev/null; git status -s; cd ..
 esac
 
 export PATH=$HOME/bin:$PATH
