@@ -3,6 +3,8 @@
 alias vim='vim -p'
 alias vi='vim -p'
 
+export PATH=$HOME/seanet:$PATH
+
 export PATH=$HOME/projects/mtsdb/bin:$HOME/projects/mts/bin:$HOME/projects/atsdb/bin:$HOME/projects/atste/bin:$HOME/projects/mo/bin:$PATH
 
 #ats
@@ -32,7 +34,6 @@ alias mts_root='cd $HOME/projects/mts/bin'
 alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mts_dev='cd $HOME/projects/mts/dev/strats'
 alias mts_strats='cd /mnt/nas_gfs'
-
 
 #rip500
 export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH

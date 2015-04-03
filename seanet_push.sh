@@ -1,5 +1,5 @@
 
-srv=seaworld.synology.me
+srv=seanet.synology.me
 
 dirs='music/albums/ videos/skydiving/ photos/publish/ photos/public/ photos/skydiving/'
 
@@ -17,8 +17,15 @@ cd $HOME
 
 for d in $dirs 
 do
-        echo processing $d
-        rsync -ah $d $srv:$d --delete $dry_run --info DEL,BACKUP,COPY,NAME
-        echo 
+
+        if [ -d $d ] 
+        then
+
+
+                echo processing $d
+                rsync -ah $d $srv:$d --delete $dry_run --info DEL,BACKUP,COPY,NAME
+                echo 
+        fi
+
 
 done
