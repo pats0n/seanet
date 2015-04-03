@@ -34,6 +34,8 @@ set expandtab
 
 set switchbuf=useopen,usetab,newtab
 
+cabbrev help tab help
+
 "YouCompleteMe (ycm)
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
