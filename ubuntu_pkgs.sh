@@ -1,9 +1,10 @@
 #!/bin/sh
 
-sudo apt-get install vim \
+sudo apt-get install \
+        vim \
         git \
         rsync \
-        ssh 
+        ssh \
         cifs-utils \
         openconnect \
         pssh \
@@ -12,7 +13,7 @@ sudo apt-get install vim \
         subversion \
         golang \
         s3cmd \
-        ec2-api-tools 
+        ec2-api-tools \
         icedtea-netx \
         nmap \
         mmv \
