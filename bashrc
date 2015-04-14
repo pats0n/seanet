@@ -50,11 +50,13 @@ export GOPATH=$HOME
 export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
 alias matlab="matlab -nodesktop"
 
+source $HOME/.git-prompt.sh
+
 
 if  [[ `hostname` =~ 'grd' ]]
 then
 
-PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+        PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\][$__git_ps1] '
 
 fi
 
@@ -63,6 +65,6 @@ fi
 if  [[ `hostname` =~ 'wud' ]]
 then
 
-PS1='\[\e[1;37m\][\u@\h \W]\$\[\e[0m\] '
+        PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] '
 
 fi
