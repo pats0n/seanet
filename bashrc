@@ -50,7 +50,7 @@ export GOPATH=$HOME
 export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
 alias matlab="matlab -nodesktop"
 
-source $HOME/.git-prompt.sh
+source $HOME/seanet/git-prompt.sh
 
 
 if  [[ `hostname` =~ 'grd' ]]
