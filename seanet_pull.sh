@@ -23,7 +23,7 @@ do
 
 
                 echo processing $d
-                rsync -ah $srv:$d $d --delete $dry_run --info DEL,BACKUP,COPY,NAME
+                rsync -ah $srv:$d $d --delete $dry_run --size-only --info DEL,BACKUP,COPY,NAME
                 echo 
         fi
 
