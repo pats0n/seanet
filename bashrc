@@ -58,12 +58,7 @@ then
 
         PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] '
 
-fi
-
-
-
-if  [[ `hostname` =~ 'wud' ]]
-then
+else
 
         PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] '
 
