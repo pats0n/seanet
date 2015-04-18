@@ -22,5 +22,6 @@ sudo apt-get install \
         astyle  \
         pyflakes \
         libxml2-utils\
-        screen
+        screen \
+        cmake 
 
