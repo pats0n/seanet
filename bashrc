@@ -43,6 +43,7 @@ esac
 
 export PATH=$HOME/bin:$PATH
 export GOPATH=$HOME
+export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 
 #matlab
 export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
