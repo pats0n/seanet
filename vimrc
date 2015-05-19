@@ -23,7 +23,7 @@ filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
 
-map <F5> :wa \| make -j5 <CR>
+map <F5> :wa \| make  <CR>
 
 map <F8> :%! astyle -A2 -F --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%s/\s\+$//e <CR> :%s/\n\{3,}/\r\r/e <CR> 
 
