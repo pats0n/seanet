@@ -56,10 +56,10 @@ source $HOME/seanet/git-prompt.sh
 if  [[ `hostname` =~ 'grd' ]]
 then
 
-        PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] '
+        PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] $(STY) '
 
 else
 
-        PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] '
+        PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
 fi
