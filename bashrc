@@ -57,7 +57,7 @@ source $HOME/seanet/git-prompt.sh
 if  [[ `hostname` =~ 'grd' ]] || [[ `hostname` =~ 'c0' ]] 
 then
 
-        PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) \$\[\e[0m\] $(STY) '
+        PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
 else
 
