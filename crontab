@@ -25,5 +25,5 @@
 
 30 00 * * * seanet/svn_backup_gdrive.sh 2>&1 | mailx -s "seanet/svn_backup_gdrive.sh" pats0nn@gmail.com
 
-10 22 * * * seaneth/git_backup_gdrive.sh 2>&1 | mailx -s "seanet/git_backup_gdrive.sh" pats0nn@gmail.com
+10 22 * * * seanet/git_backup_gdrive.sh 2>&1 | mailx -s "seanet/git_backup_gdrive.sh" pats0nn@gmail.com
 
