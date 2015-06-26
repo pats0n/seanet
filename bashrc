@@ -64,3 +64,5 @@ else
         PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
 fi
+
+export SLURM_CONF=$HOME/projects/mts/etc/slurm.conf
