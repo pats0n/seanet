@@ -2,6 +2,7 @@
 
 alias vim='vim -p'
 alias vi='vim -p'
+alias smap='smap -i2'
 
 export PATH=$HOME/seanet:$PATH
 
