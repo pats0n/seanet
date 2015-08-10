@@ -1,1 +1,1 @@
-go get github.com/rakyll/drive/cmd/drive
+go get github.com/odeke-em/drive/cmd/drive
