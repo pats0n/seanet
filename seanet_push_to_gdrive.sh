@@ -4,6 +4,6 @@ for d in $dirs
 do
 
         echo pushing $d 
-        drive push --no-prompt=true $HOME/$d
+        $HOME/bin/drive push --no-prompt=true $HOME/$d
 
 done
