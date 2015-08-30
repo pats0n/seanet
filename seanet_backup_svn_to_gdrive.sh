@@ -2,7 +2,9 @@
 
 cd `dirname $0`
 
-DUMPDIR=$HOME/gdrive/svnbackup
+DUMPDIR=$HOME/svnbackup
+
+mkdir -p $DUMPDIR
 
 echo dumping svn/trading ...
 
