@@ -1,5 +1,5 @@
 
-srv=seanet.synology.me
+srv=seanet
 
 dirs='music/albums/ videos/skydiving/ photos/publish/ photos/public/ photos/skydiving/'
 
