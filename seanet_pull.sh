@@ -25,6 +25,8 @@ do
                 echo processing $d
                 rsync -ah $srv:$d $d --delete $dry_run --size-only --info DEL,BACKUP,COPY,NAME
                 echo 
+        else 
+                echo skipping $d
         fi
 
 
