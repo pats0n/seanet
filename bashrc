@@ -66,4 +66,4 @@ else
 
 fi
 
-export SLURM_CONF=$HOME/projects/mts/etc/slurm.conf
+export SLURM_CONF=$HOME/projects/mts/etc/slurm_do.conf
