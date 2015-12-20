@@ -5,11 +5,11 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-/dev/mapper/seacrab--vg-root /               ext4    errors=remount-ro 0       1
+/dev/mapper/seahorse--vg-root /               ext4    errors=remount-ro 0       1
 # /boot was on /dev/sda1 during installation
-UUID=2423647f-fab7-4318-a463-21748613643c /boot           ext2    defaults        0       2
-/dev/mapper/seacrab--vg-swap_1 none            swap    sw              0       0
+UUID=837e7bd5-891d-4a8b-9f1a-298ba4eef95c /boot           ext2    defaults        0       2
+/dev/mapper/seahorse--vg-swap_1 none            swap    sw              0       0
 
 192.168.0.11:/volume1/vault	/mnt/vault	nfs4	rw,nolock	0	0
-192.168.0.11:/volume1/trading	/mnt/t	nfs4	rw,nolock	0	0
-192.168.0.11:/volume1/photos	/mnt/photos	nfs4	rw,nolock	0	0
+192.168.0.11:/volume1/photos    /mnt/photos     nfs4	rw,nolock	0	0
+

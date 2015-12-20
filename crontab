@@ -23,7 +23,8 @@
 
 #30 01 * * * mybash/svn_backup_s3.sh 2>&1 | mailx -s "bin/svn_backup_s3.sh" pats0nn@gmail.com
 
-30 00 * * * seanet/svn_backup_gdrive.sh 2>&1 | mailx -s "seanet/svn_backup_gdrive.sh" pats0nn@gmail.com
+02 01 * * * seanet/seanet_backup_svn_to_gdrive.sh 2>&1 | mailx -s "seanet/seanet_backup_svn_to_gdrive.sh" pats0nn@gmail.com
 
-10 22 * * * seanet/git_backup_gdrive.sh 2>&1 | mailx -s "seanet/git_backup_gdrive.sh" pats0nn@gmail.com
+43 02 * * * seanet/seanet_backup_git_to_gdrive.sh 2>&1 | mailx -s "seanet/seanet_backup_git_to_gdrive.sh" pats0nn@gmail.com
 
+00 17 * * * seanet/seanet_push_to_gdrive.sh 2>&1 | mailx -s "seanet/seanet_push_to_gdrive.sh" pats0nn@gmail.com
