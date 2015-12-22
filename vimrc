@@ -54,4 +54,4 @@ let g:syntastic_python_checkers = [ 'pyflakes' ]
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
 "ctrp
-set wildignore+=*.o,*.o.d
+set wildignore+=*.o,*.o.d,*.a,*.pyc
