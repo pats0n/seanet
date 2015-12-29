@@ -55,3 +55,4 @@ let g:syntastic_xml_checkers = [ 'xmllint' ]
 
 "ctrp
 set wildignore+=*.o,*.o.d,*.a,*.pyc
+let g:ctrlp_show_hidden=1
