@@ -26,7 +26,7 @@ au BufRead,BufNewFile *.ds set filetype=xml
 
 map <F5> :wa \| make  <CR>
 
-map <F8> :%! astyle -A2 -F --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%s/\s\+$//e <CR> :%s/\n\{3,}/\r\r/e <CR> 
+map <F8> :%! astyle -A2 -F -S -K -C --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%s/\s\+$//e <CR> :%s/\n\{3,}/\r\r/e <CR> 
 
 set swb=usetab
 
@@ -41,6 +41,7 @@ cabbrev help tab help
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1}
+let g:ycm_always_populate_location_list=1
 
 "pydoc
 let g:pydoc_open_cmd = 'tabnew'
