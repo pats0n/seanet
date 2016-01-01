@@ -35,8 +35,6 @@ set expandtab
 
 set switchbuf=useopen,usetab,newtab
 
-cabbrev help tab help
-
 "YouCompleteMe (ycm)
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
@@ -46,9 +44,6 @@ let g:ycm_always_populate_location_list=1
 "pydoc
 let g:pydoc_open_cmd = 'tabnew'
 
-"pyflakes
-highlight SpellBad term=reverse ctermbg=2
-
 "syntastic
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ]
 let g:syntastic_python_checkers = [ 'pyflakes' ] 
@@ -57,3 +52,8 @@ let g:syntastic_xml_checkers = [ 'xmllint' ]
 "ctrp
 set wildignore+=*.o,*.o.d,*.a,*.pyc
 let g:ctrlp_show_hidden=1
+
+"fugitive
+set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
+
