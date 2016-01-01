@@ -26,7 +26,10 @@ au BufRead,BufNewFile *.ds set filetype=xml
 
 map <F5> :wa \| make  <CR>
 
-map <F8> :%! astyle -A2 -F -S -K -C --lineend=linux<CR> gg=G :%s/{$/{\r/g <CR> :%s/\s\+$//e <CR> :%s/\n\{3,}/\r\r/e <CR> 
+command Wamake wa | make -j5
+
+command PrettyFormat %! astyle -A2 -F -S -K -C --lineend=linux 
+"| go 0 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
 set swb=usetab
 
