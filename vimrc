@@ -28,8 +28,7 @@ map <F5> :wa \| make  <CR>
 
 command Wamake wa | make -j5
 
-command PrettyFormat %! astyle -A2 -F -S -K -C --lineend=linux 
-"| go 0 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+command PrettyFormat execute '%! astyle -A2 -F -S -K -C --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
 set swb=usetab
 
