@@ -24,16 +24,19 @@ filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
 
-map <F5> :wa \| make  <CR>
-
 command Wamake wa | make -j5
 
-command PrettyFormat execute '%! astyle -A2 -F -S -K -C --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
-
-set swb=usetab
+command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
 set hlsearch
+
+
+set tabstop=4
+set shiftwidth=4
 set expandtab
+
+
+
 
 set switchbuf=useopen,usetab,newtab
 
