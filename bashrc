@@ -33,6 +33,7 @@ alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
 #mts
 alias mts='cd $HOME/projects/mts/strats'
+alias mts_bin='cd $HOME/projects/mts/bin'
 alias rtl='cd $HOME/projects/mts/rtl'
 alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mtscfg='cd $HOME/projects/mtscfg'
@@ -57,7 +58,7 @@ alias matlab="matlab -nodesktop"
 source $HOME/seanet/git-prompt.sh
 
 
-if  [[ `hostname` =~ 'grd' ]] || [[ `hostname` =~ 'c0' ]] 
+if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] 
 then
 
         PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
