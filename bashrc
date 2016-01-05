@@ -34,6 +34,7 @@ alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 #mts
 alias mts='cd $HOME/projects/mts/strats'
 alias mts_bin='cd $HOME/projects/mts/bin'
+alias mts_root='cd $HOME/projects/mts'
 alias rtl='cd $HOME/projects/mts/rtl'
 alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mtscfg='cd $HOME/projects/mtscfg'

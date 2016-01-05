@@ -35,22 +35,19 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-
-
-
 set switchbuf=useopen,usetab,newtab
 
 "YouCompleteMe (ycm)
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1}
+let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1 }
 let g:ycm_always_populate_location_list=1
 
 "pydoc
 let g:pydoc_open_cmd = 'tabnew'
 
 "syntastic
-let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ]
+let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ] 
 let g:syntastic_python_checkers = [ 'pyflakes' ] 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
@@ -61,4 +58,7 @@ let g:ctrlp_show_hidden=1
 "fugitive
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
+
+"jedivim
+let g:jedi#completions_command = "<C-N>"
 
