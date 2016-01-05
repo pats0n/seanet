@@ -32,7 +32,7 @@ alias mo_deman='cd `ls ~/projects/mo/deman-2*/ -d | tail -1 `; cd bin;'
 alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
 #mts
-alias mts='cd $HOME/projects/mts/strats'
+alias mts_scratch='cd $HOME/projects/mts/scratch'
 alias mts_bin='cd $HOME/projects/mts/bin'
 alias mts_root='cd $HOME/projects/mts'
 alias rtl='cd $HOME/projects/mts/rtl'
