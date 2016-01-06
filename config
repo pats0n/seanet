@@ -1,0 +1,21 @@
+Host    *
+#        AddressFamily inet
+        ServerAliveInterval 5
+        ConnectTimeout 120
+
+
+Host seanet
+       HostName seanet.synology.me
+       user asafonov
+
+Host mtsdb 
+        HostName seanet.synology.me
+        user asafonov
+
+Host atsgit
+        HostName seanet.synology.me
+        user asafonov
+
+Host hksvr1
+        HostName 192.168.122.223
+        user asafonov

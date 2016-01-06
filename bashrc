@@ -12,6 +12,8 @@ export PATH=$HOME/projects/mts/rtl/bin:$PATH
 #kokomo
 alias kokomo="cd $HOME/projects/kokomo"
 
+alias seanet="cd $HOME/seanet"
+
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
 
