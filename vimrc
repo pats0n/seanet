@@ -15,10 +15,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
 
 if v:version > 703
-       Plugin 'Valloric/YouCompleteMe'
+    Plugin 'Valloric/YouCompleteMe'
 endif
 
 call vundle#end()
+
 
 syntax on
 
@@ -32,7 +33,6 @@ command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go
 
 set hlsearch
 
-
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -42,8 +42,9 @@ set switchbuf=useopen,usetab,newtab
 "YouCompleteMe (ycm)
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1 }
-let g:ycm_always_populate_location_list=1
+"let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1 }
+let g:ycm_filetype_blacklist =  { '*.py' : 1 } 
+"let g:ycm_always_populate_location_list=1
 
 "pydoc
 let g:pydoc_open_cmd = 'tabnew'
@@ -62,5 +63,5 @@ set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 "jedivim
-let g:jedi#completions_command = "<C-N>"
+"let g:jedi#completions_command = "<C-N>"
 
