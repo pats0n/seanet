@@ -12,6 +12,7 @@ export PATH=$HOME/projects/mts/rtl/bin:$PATH
 #kokomo
 alias kokomo="cd $HOME/projects/kokomo"
 
+#seanet
 alias seanet="cd $HOME/seanet"
 
 #ats
@@ -54,9 +55,8 @@ case "$-" in
 esac
 
 export PATH=$HOME/bin:$PATH
-export PATH=$HOME/projects/CMake/bin:$PATH
 export GOPATH=$HOME
-export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$HOME/lib64:$HOME/lib:$LD_LIBRARY_PATH
 
 #matlab
 export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
