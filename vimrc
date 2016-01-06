@@ -20,6 +20,8 @@ endif
 
 call vundle#end()
 
+syntax on
+
 filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
