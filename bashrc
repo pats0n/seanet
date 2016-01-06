@@ -50,10 +50,11 @@ export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
 case "$-" in
-*i*) git -C $HOME/seanet pull > /dev/null; git -C $HOME/seanet status -s
+*i*) cd projects/seanet; git pull > /dev/null; git status -s; cd $HOME
 esac
 
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/projects/CMake/bin:$PATH
 export GOPATH=$HOME
 export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 
