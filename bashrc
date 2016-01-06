@@ -48,7 +48,7 @@ export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
 case "$-" in
-*i*) cd projects/seanet; git pull > /dev/null; git status -s; cd $HOME
+*i*) cd seanet; git pull > /dev/null; git status -s; cd $HOME
 esac
 
 export PATH=$HOME/bin:$PATH
