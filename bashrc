@@ -9,6 +9,9 @@ export PATH=$HOME/seanet:$PATH
 export PATH=$HOME/projects/mtsdb/bin:$HOME/projects/mts/bin:$HOME/projects/atsdb/bin:$HOME/projects/atste/bin:$HOME/projects/mo/bin:$PATH
 export PATH=$HOME/projects/mts/rtl/bin:$PATH
 
+#kokomo
+alias kokomo="cd $HOME/projects/kokomo"
+
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
 
