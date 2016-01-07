@@ -6,7 +6,11 @@ alias smap='smap -i2'
 
 export PATH=$HOME/seanet:$PATH
 
-export PATH=$HOME/projects/mtsdb/bin:$HOME/projects/mts/bin:$HOME/projects/atsdb/bin:$HOME/projects/atste/bin:$HOME/projects/mo/bin:$PATH
+export PATH=$HOME/projects/mtsdb/bin:$PATH
+export PATH=$HOME/projects/mts/bin:$PATH
+export PATH=$HOME/projects/atsdb/bin:$PATH
+export PATH=$HOME/projects/atste/bin:$PATH
+export PATH=$HOME/projects/mo/bin:$PATH
 export PATH=$HOME/projects/mts/rtl/bin:$PATH
 
 #kokomo
@@ -51,11 +55,13 @@ export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
 case "$-" in
-*i*) cd seanet; git pull > /dev/null; git status -s; cd $HOME
+    *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
+
 esac
 
-export PATH=$HOME/bin:$PATH
 export GOPATH=$HOME
+
+export PATH=$HOME/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/lib64:$HOME/lib:$LD_LIBRARY_PATH
 
 #matlab
@@ -77,3 +83,5 @@ else
 fi
 
 export SLURM_CONF=$HOME/projects/mts/var/slurm.conf
+
+
