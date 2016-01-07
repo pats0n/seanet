@@ -1,0 +1,3 @@
+LABEL=cloudimg-rootfs	/	 ext4	defaults,discard	0 0
+
+tmpfs       /mnt/ramdisk tmpfs   nodev,nosuid,noexec,nodiratime,size=15g   0 0
