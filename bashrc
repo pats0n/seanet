@@ -52,11 +52,6 @@ alias mtsroot='cd $HOME/projects/mtsroot'
 export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
-case "$-" in
-    *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
-
-esac
-
 export GOPATH=$HOME
 
 export PATH=$HOME/bin:$PATH
@@ -81,5 +76,10 @@ else
 fi
 
 export SLURM_CONF=$HOME/projects/mts/var/slurm.conf
+
+case "$-" in
+    *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
+
+esac
 
 

@@ -26,6 +26,7 @@ syntax on
 filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
+au BufRead,BufNewFile *.def set filetype=cpp
 
 command Wamake wa | make -j5
 
