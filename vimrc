@@ -28,7 +28,7 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-command Wamake wa | make -j5
+command Wamake wa | make -j4
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
@@ -43,9 +43,9 @@ set switchbuf=useopen,usetab,newtab
 "YouCompleteMe (ycm)
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
-"let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1 }
+let g:ycm_filetype_whitelist =  { 'cpp' : 1, 'hpp' : 1 }
 let g:ycm_filetype_blacklist =  { '*.py' : 1 } 
-"let g:ycm_always_populate_location_list=1
+let g:ycm_always_populate_location_list=1
 
 "pydoc
 let g:pydoc_open_cmd = 'tabnew'
@@ -55,7 +55,7 @@ let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ]
 let g:syntastic_python_checkers = [ 'pyflakes' ] 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
-"ctrp
+"ctrlp
 set wildignore+=*.o,*.o.d,*.a,*.pyc
 let g:ctrlp_show_hidden=1
 
