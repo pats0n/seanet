@@ -15,6 +15,10 @@ alias kokomo="cd $HOME/projects/kokomo"
 #seanet
 alias seanet="cd $HOME/seanet"
 
+#tfn
+alias tfn='cd $HOME/projects/tfn'
+export PATH=$HOME/projects/tfn/bin:$PATH
+
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
 
