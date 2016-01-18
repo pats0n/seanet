@@ -11,7 +11,12 @@ export PATH=$HOME/projects/mts/bin:$PATH
 export PATH=$HOME/projects/atsdb/bin:$PATH
 export PATH=$HOME/projects/atste/bin:$PATH
 export PATH=$HOME/projects/mo/bin:$PATH
-export PATH=$HOME/projects/mts/rtl/bin:$PATH
+
+
+#rtl
+alias rtl='cd $HOME/projects/tfn/rtl'
+export PATH=$HOME/projects/tfn/rtl/bin:$PATH
+
 
 #kokomo
 alias kokomo="cd $HOME/projects/kokomo"
@@ -47,7 +52,6 @@ alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
 #mts
 alias mts='cd $HOME/projects/mts'
-alias rtl='cd $HOME/projects/mts/rtl'
 alias mtsdb='cd $HOME/projects/mtsdb/bin'
 alias mtscfg='cd $HOME/projects/mtscfg'
 alias mtsroot='cd $HOME/projects/mtsroot'
