@@ -2,15 +2,15 @@
 
 alias vim='vim -p'
 alias vi='vim -p'
-alias smap='smap -i2'
+#alias smap='smap -i2'
 
 export PATH=$HOME/seanet:$PATH
 
-export PATH=$HOME/projects/mtsdb/bin:$PATH
-export PATH=$HOME/projects/mts/bin:$PATH
-export PATH=$HOME/projects/atsdb/bin:$PATH
-export PATH=$HOME/projects/atste/bin:$PATH
-export PATH=$HOME/projects/mo/bin:$PATH
+#export PATH=$HOME/projects/mtsdb/bin:$PATH
+#export PATH=$HOME/projects/mts/bin:$PATH
+#export PATH=$HOME/projects/atsdb/bin:$PATH
+#export PATH=$HOME/projects/atste/bin:$PATH
+#export PATH=$HOME/projects/mo/bin:$PATH
 
 
 #rtl
@@ -26,7 +26,7 @@ alias seanet="cd $HOME/seanet"
 
 #tfn
 alias tfn='cd $HOME/projects/tfn'
-export PATH=$HOME/projects/tfn/bin:$PATH
+#export PATH=$HOME/projects/tfn/bin:$PATH
 
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
@@ -36,9 +36,6 @@ alias atste_dev="cd $HOME/projects/atste/dev/strats"
 alias atste_crabel='cd `ls ~/projects/atste/crabel*/ -d | tail -1 `; cd strats'
 alias atste_cjp='cd `ls ~/projects/atste/cjp*/ -d | tail -1 `; cd strats'
 alias atste_test='cd `ls ~/projects/atste/test-2*/ -d | tail -1 `; cd strats'
-
-#AWS
-export EC2_URL=http://ec2.ap-southeast-1.amazonaws.com
 
 #mo 
 alias mo_root="cd $HOME/projects/mo/bin"
@@ -83,7 +80,7 @@ else
 
 fi
 
-export SLURM_CONF=$HOME/projects/mts/var/slurm.conf
+#export SLURM_CONF=$HOME/projects/tfn/var/slurm.conf
 
 case "$-" in
     *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
