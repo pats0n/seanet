@@ -1,8 +1,6 @@
 #!/bin/bash
 
-alias vim='vim -p'
-alias vi='vim -p'
-#alias smap='smap -i2'
+alias vi="vim -p"
 
 export PATH=$HOME/seanet:$PATH
 
@@ -12,14 +10,9 @@ export PATH=$HOME/seanet:$PATH
 #export PATH=$HOME/projects/atste/bin:$PATH
 #export PATH=$HOME/projects/mo/bin:$PATH
 
-
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
 export PATH=$HOME/projects/tfn/rtl/bin:$PATH
-
-
-#kokomo
-alias kokomo="cd $HOME/projects/kokomo"
 
 #seanet
 alias seanet="cd $HOME/seanet"
@@ -30,12 +23,7 @@ alias tfn='cd $HOME/projects/tfn'
 
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
-
-alias atste_root="cd $HOME/projects/atste/bin"
-alias atste_dev="cd $HOME/projects/atste/dev/strats"
-alias atste_crabel='cd `ls ~/projects/atste/crabel*/ -d | tail -1 `; cd strats'
-alias atste_cjp='cd `ls ~/projects/atste/cjp*/ -d | tail -1 `; cd strats'
-alias atste_test='cd `ls ~/projects/atste/test-2*/ -d | tail -1 `; cd strats'
+alias atste="cd $HOME/projects/atste/dev/strats"
 
 #mo 
 alias mo_root="cd $HOME/projects/mo/bin"
@@ -57,6 +45,8 @@ alias mtsroot='cd $HOME/projects/mtsroot'
 export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
+
+
 export GOPATH=$HOME
 
 export PATH=$HOME/bin:$PATH
@@ -68,8 +58,7 @@ alias matlab="matlab -nodesktop"
 
 source $HOME/seanet/git-prompt.sh
 
-
-if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] 
+if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'kkc' ]]
 then
 
         PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
@@ -77,14 +66,11 @@ then
 else
 
         PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
-
 fi
 
-#export SLURM_CONF=$HOME/projects/tfn/var/slurm.conf
 
 case "$-" in
     *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
 esac
-
 
