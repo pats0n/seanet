@@ -4,6 +4,7 @@ alias vi="vim -p"
 
 export PATH=$HOME/seanet:$PATH
 
+#export PATH=$HOME/projects/tfn/bin:$PATH
 #export PATH=$HOME/projects/mtsdb/bin:$PATH
 #export PATH=$HOME/projects/mts/bin:$PATH
 #export PATH=$HOME/projects/atsdb/bin:$PATH
@@ -19,7 +20,6 @@ alias seanet="cd $HOME/seanet"
 
 #tfn
 alias tfn='cd $HOME/projects/tfn'
-#export PATH=$HOME/projects/tfn/bin:$PATH
 
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
@@ -61,15 +61,21 @@ source $HOME/seanet/git-prompt.sh
 if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'kkc' ]]
 then
 
-        PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
+    PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-else
+elif  [[ `hostname` =~ 'seahorse' ]]
+then
 
-        PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
+    PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
+
+else 
+
+    PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
+
 fi
 
-
 case "$-" in
+
     *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
 esac
