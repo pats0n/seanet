@@ -13,6 +13,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'Shougo/vimproc.vim'
 
 if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
