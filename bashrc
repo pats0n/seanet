@@ -58,12 +58,12 @@ alias matlab="matlab -nodesktop"
 
 source $HOME/seanet/git-prompt.sh
 
-if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'kkc' ]]
+if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'seahorse' ]]
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'seahorse' ]]
+elif  [[ `hostname` =~ 'kkc' ]]
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
