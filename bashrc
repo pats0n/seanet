@@ -11,6 +11,9 @@ export PATH=$HOME/seanet:$PATH
 #export PATH=$HOME/projects/atste/bin:$PATH
 #export PATH=$HOME/projects/mo/bin:$PATH
 
+#rp
+alias rp='cd $HOME/projects/rp'
+
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
 export PATH=$HOME/projects/tfn/rtl/bin:$PATH
