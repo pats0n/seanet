@@ -3,7 +3,6 @@ Host    *
         ServerAliveInterval 5
         ConnectTimeout 120
 
-
 Host seanet
        HostName seanet.synology.me
        user asafonov
@@ -19,3 +18,11 @@ Host atsgit
 Host hksvr1
         HostName 192.168.122.223
         user asafonov
+
+Host tfngit
+        HostName 192.168.122.103
+        User shfe
+
+Host hksvr2
+        HostName 192.168.122.103
+        User asafonov

@@ -2,22 +2,12 @@
 
 alias vi="vim -p"
 
-export PATH=$HOME/seanet:$PATH
-
-#export PATH=$HOME/projects/tfn/bin:$PATH
-#export PATH=$HOME/projects/mtsdb/bin:$PATH
-#export PATH=$HOME/projects/mts/bin:$PATH
-#export PATH=$HOME/projects/atsdb/bin:$PATH
-#export PATH=$HOME/projects/atste/bin:$PATH
-#export PATH=$HOME/projects/mo/bin:$PATH
-
 #rp
 alias rp='cd $HOME/projects/rp'
 alias rpmul='cd $HOME/projects/rpmul/bin'
 
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
-export PATH=$HOME/projects/tfn/rtl/bin:$PATH
 
 #seanet
 alias seanet="cd $HOME/seanet"
@@ -49,16 +39,14 @@ alias mtsroot='cd $HOME/projects/mtsroot'
 export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
 export PATH=/usr/lib/chromium-browser:$PATH
 
-
-
+#golang
 export GOPATH=$HOME
 
+#local packages
 export PATH=$HOME/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/lib64:$HOME/lib:$LD_LIBRARY_PATH
 
-#matlab
-export PATH=/usr/local/MATLAB/R2014b/bin:$PATH
-alias matlab="matlab -nodesktop"
+
 
 source $HOME/seanet/git-prompt.sh
 
