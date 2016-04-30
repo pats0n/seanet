@@ -6,9 +6,9 @@ dirs='music/albums/ videos/skydiving/ photos/publish/ photos/public/ photos/skyd
 if [ "${1}k" != 'okk' ]
 then
 
-        dry_run="--dry-run"
+    dry_run="--dry-run"
 else
-        echo REAL RUN !
+    echo REAL RUN !
 
 fi
 
@@ -18,14 +18,14 @@ cd $HOME
 for d in $dirs 
 do
 
-        if [ -d $d ] 
-        then
+    if [ -d $d ] 
+    then
 
 
-                echo processing $d
-                rsync -ah $d $srv:$d --delete $dry_run --size-only --info DEL,BACKUP,COPY,NAME
-                echo 
-        fi
+        echo processing $d
+        rsync -ah $d $srv:$d --delete $dry_run --size-only --info DEL,BACKUP,COPY,NAME
+        echo 
+    fi
 
 
 done
