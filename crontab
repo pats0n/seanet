@@ -25,7 +25,7 @@
 
 #02 01 * * * seanet/seanet_backup_svn_to_gdrive.sh 2>&1 | mailx -s "seanet/seanet_backup_svn_to_gdrive.sh" pats0nn@gmail.com
 
-39 13 * * * seanet/seanet_backup_git_to_gdrive.sh 2>&1 | tr -cd '[:print:]' | mailx -r asafonov@seanet.synology.me -s "seanet/seanet_backup_git_to_gdrive.sh" pats0nn@gmail.com
+39 13 * * * seanet/seanet_backup_git_to_gdrive.sh 2>&1 | tr -d '\015' | mailx -r asafonov@seanet.synology.me -s "seanet/seanet_backup_git_to_gdrive.sh" pats0nn@gmail.com
 
 
-00 17 * * * seanet/seanet_push_to_gdrive.sh 2>&1 | mailx -s "seanet/seanet_push_to_gdrive.sh" pats0nn@gmail.com
+00 17 * * * seanet/seanet_push_to_gdrive.sh 2>&1 | tr -d '\015' | mailx -s "seanet/seanet_push_to_gdrive.sh" pats0nn@gmail.com
