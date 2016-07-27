@@ -16,7 +16,7 @@ alias seanet="cd $HOME/seanet"
 
 #tfn
 alias tfn='cd $HOME/projects/tfn'
-alias tfnstrat='cd $HOME/projects/tfn/strats'
+alias tfncfg='cd $HOME/projects/tfndata/strats'
 
 #ats
 alias atsdb="cd $HOME/projects/atsdb/bin"
