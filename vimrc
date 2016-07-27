@@ -55,7 +55,7 @@ let g:syntastic_python_checkers = [ 'pyflakes' ]
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
 "ctrlp
-set wildignore+=*.o,*.o.d,*.a,*.pyc,tests,var,strats
+set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
 let g:ctrlp_show_hidden=1
 
 "fugitive
