@@ -7,5 +7,9 @@ date=$(date +%Y%m%d)
 
 tar -cf - git-repos/* | gzip - > ~/gitbackup/gitbackup.$date.tar.gz
 
-$HOME/bin/drive push -no-prompt=True gitbackup/gitbackup.$date.tar.gz | grep -v "=="
+echo $(date) starting push ...
+
+$HOME/bin/drive push -verbose -no-prompt=True gitbackup/gitbackup.$date.tar.gz > /dev/null
+
+echo $(date) finished push 
 
