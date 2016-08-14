@@ -5,8 +5,6 @@ alias vi="vim -p"
 #rp
 alias rp='cd $HOME/projects/rp'
 alias rpmul='cd $HOME/projects/rpmul/bin'
-export PATH=$HOME/projects/rp/bin:$PATH
-
 
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
