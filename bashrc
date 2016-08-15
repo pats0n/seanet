@@ -2,10 +2,6 @@
 
 alias vi="vim -p"
 
-#rp
-alias rp='cd $HOME/projects/rp'
-alias rpmul='cd $HOME/projects/rpmul/bin'
-
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
 
