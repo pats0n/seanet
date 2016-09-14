@@ -36,6 +36,7 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set splitright
 
 set switchbuf=useopen,usetab,newtab
 
@@ -47,7 +48,7 @@ let g:ycm_filetype_blacklist =  { '*' : 1 }
 let g:ycm_always_populate_location_list=1
 
 "pydoc
-let g:pydoc_open_cmd = 'tabnew'
+let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ] 
