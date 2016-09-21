@@ -12,6 +12,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'powerline/powerline'
 if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
 endif
@@ -58,6 +59,10 @@ set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
 let g:ctrlp_show_hidden=1
 
 "fugitive
-set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+"set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 set laststatus=2
+
+"powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
