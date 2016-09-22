@@ -12,10 +12,13 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'powerline/powerline'
+
 if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
 endif
+
+Plugin 'powerline/powerline'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
@@ -30,6 +33,8 @@ au BufRead,BufNewFile *.def set filetype=cpp
 command Wamake wa | make -j4
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+
+set relativenumber
 
 set hlsearch
 
@@ -59,8 +64,7 @@ set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
 let g:ctrlp_show_hidden=1
 
 "fugitive
-"set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
+set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 "powerline
