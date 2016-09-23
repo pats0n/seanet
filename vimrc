@@ -19,6 +19,7 @@ endif
 
 Plugin 'powerline/powerline'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
@@ -34,7 +35,7 @@ command Wamake wa | make -j4
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
-set relativenumber
+set relativenumber nu
 
 set hlsearch
 
