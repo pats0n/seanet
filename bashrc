@@ -2,6 +2,10 @@
 
 alias vi="vim -p"
 
+#kfix
+
+alias kfix='cd $HOME/projects/kfix'
+
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
 
@@ -16,7 +20,7 @@ alias tfncfg='cd $HOME/projects/tfndata/cfgs'
 alias atsdb="cd $HOME/projects/atsdb/bin"
 alias atste="cd $HOME/projects/atste/dev/strats"
 
-#mo 
+#mo
 alias mo_root="cd $HOME/projects/mo/bin"
 alias mo_dev="cd $HOME/projects/mo/dev/bin"
 
@@ -57,7 +61,7 @@ then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-else 
+else
 
     PS1='\[\e[1;37m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
