@@ -17,7 +17,9 @@ if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
 endif
 
-Plugin 'powerline/powerline'
+" Plugin 'powerline/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-utils/vim-man'
@@ -70,6 +72,9 @@ set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 "powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+
+"airline
+let g:airline_powerline_fonts=1
 
 
