@@ -20,6 +20,7 @@ endif
 Plugin 'powerline/powerline'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-utils/vim-man'
 
 call vundle#end()
 
@@ -70,4 +71,5 @@ set laststatus=2
 
 "powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+
 

@@ -43,6 +43,8 @@ export GOPATH=$HOME
 export PATH=$HOME/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/lib64:$HOME/lib:$LD_LIBRARY_PATH
 
+GIT_PS1_SHOWCOLORHINTS=1
+
 source $HOME/seanet/git-prompt.sh
 
 if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnake' ]]
