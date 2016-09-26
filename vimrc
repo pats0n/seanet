@@ -26,7 +26,6 @@ Plugin 'vim-utils/vim-man'
 
 call vundle#end()
 
-
 syntax on
 
 filetype plugin indent on
@@ -77,4 +76,6 @@ set laststatus=2
 "airline
 let g:airline_powerline_fonts=1
 
+highlight LineNr ctermfg=243
+highlight CursorLineNr ctermfg=243
 
