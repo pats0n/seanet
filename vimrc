@@ -74,7 +74,8 @@ set laststatus=2
 "set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
 "airline
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
+let g:airline#extensions#tabline#enabled = 1
 
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
