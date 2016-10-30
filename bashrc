@@ -2,8 +2,10 @@
 
 alias vi="vim -p"
 
-#kfix
+#tp
+alias tp='cd $HOME/projects/tp'
 
+#kfix
 alias kfix='cd $HOME/projects/kfix'
 
 #rtl
