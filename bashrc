@@ -8,6 +8,9 @@ alias tp='cd $HOME/projects/tp'
 #kfix
 alias kfix='cd $HOME/projects/kfix'
 
+#mdp3
+alias mdp3='cd $HOME/projects/mdp3'
+
 #rtl
 alias rtl='cd $HOME/projects/tfn/rtl'
 
