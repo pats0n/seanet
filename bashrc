@@ -10,10 +10,10 @@ alias rp='cd $HOME/projects/tp/rp'
 alias kfix='cd $HOME/projects/kfix'
 
 #mdp3
-alias mdp3='cd $HOME/projects/tp/mdp3'
+alias mdp3='cd $HOME/projects/mdp3'
 
 #rtl
-alias rtl='cd $HOME/projects/tfn/rtl'
+alias rtl='cd $HOME/projects/tp/rtl'
 
 #seanet
 alias seanet="cd $HOME/seanet"
