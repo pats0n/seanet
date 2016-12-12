@@ -23,7 +23,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-utils/vim-man'
-
+Plugin 'hitode909/atom-auto-programming'
+.
 call vundle#end()
 
 syntax on

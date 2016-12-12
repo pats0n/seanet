@@ -5,6 +5,7 @@ alias vi="vim -p"
 #tp
 alias tp='cd $HOME/projects/tp'
 alias rp='cd $HOME/projects/tp/rp'
+alias tpcfg='cd $HOME/projects/tpdata/cfgs'
 
 #kfix
 alias kfix='cd $HOME/projects/kfix'
