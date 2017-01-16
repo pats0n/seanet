@@ -11,7 +11,7 @@ alias tpcfg='cd $HOME/projects/tpdata/cfgs'
 alias kfix='cd $HOME/projects/kfix'
 
 #mdp3
-alias mdp3='cd $HOME/projects/mdp3'
+alias mdp3='cd $HOME/projects/tp/mdp3'
 
 #rtl
 alias rtl='cd $HOME/projects/tp/rtl'
