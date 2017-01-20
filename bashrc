@@ -8,7 +8,7 @@ alias rp='cd $HOME/projects/tp/rp'
 alias tpcfg='cd $HOME/projects/tpdata/cfgs'
 
 #kfix
-alias kfix='cd $HOME/projects/kfix'
+alias kfix='cd $HOME/projects/tp/kfix'
 
 #mdp3
 alias mdp3='cd $HOME/projects/tp/mdp3'
