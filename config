@@ -3,6 +3,11 @@ Host    *
         ServerAliveInterval 5
         ConnectTimeout 120
 
+ Host gitlab.quantrex.net
+         #HostName 103.75.202.98
+         HostName seanet.synology.me
+         #HostName gitlab.quantrex.net
+
 Host seanet
        HostName seanet.synology.me
        user asafonov
@@ -25,14 +30,41 @@ Host atsgit
         HostName seanet.synology.me
         user asafonov
 
-Host hksvr1
-        HostName 192.168.122.223
-        user asafonov
+#Host hksvr1
+#        HostName 192.168.122.223
+#        user asafonov
 
 Host tfngit
-        HostName 192.168.122.103
+
+        # HostName 192.168.122.103
+        # User shfe
+
+        HostName seanet.synology.me
+        User asafonov
+
+#Host bamljp3
+#        HostName 192.168.122.103
+
+Host tfnsrv
+        HostName seanet.synology.me
+#        HostName 192.168.122.103
         User shfe
 
-Host bamljp3
-        HostName 192.168.122.103
-        User shfe
+Host qclcert
+        HostName 103.75.202.98
+        User alexey
+
+Host qclwrk
+        HostName qcl-syd-guest01
+
+Host qclcme2
+        HostName qcl-chi-trd02
+        User qcprod
+
+Host qclcme3
+        HostName qcl-chi-trd03
+        User qcprod
+
+Host qclcme4
+        HostName qcl-chi-trd04
+        User qcprod
