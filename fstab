@@ -7,9 +7,9 @@
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 /dev/mapper/seahorse--vg-root /               ext4    errors=remount-ro 0       1
 # /boot was on /dev/sda1 during installation
-UUID=837e7bd5-891d-4a8b-9f1a-298ba4eef95c /boot           ext2    defaults        0       2
+UUID=31ea05d6-4935-47eb-a83e-74d57dd6ff05 /boot           ext2    defaults        0       2
 /dev/mapper/seahorse--vg-swap_1 none            swap    sw              0       0
 
-192.168.0.11:/volume1/vault	/mnt/vault	nfs4	rw,nolock	0	0
-192.168.0.11:/volume1/photos    /mnt/photos     nfs4	rw,nolock	0	0
-
+192.168.0.11:/volume1/vault /mnt/vault  nfs4    rw,nolock   0   0
+192.168.0.11:/volume1/svn /mnt/svn  nfs4    rw,nolock   0   0
+192.168.0.11:/volume1/kkc /mnt/kkc  nfs4    rw,nolock   0   0
