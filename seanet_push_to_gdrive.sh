@@ -1,4 +1,4 @@
-dirs='videos/skydiving photos/skydiving music/albums photos/publish photos/public projects/tfndata/ctpticks projects/tfndata/shfestatic projects/tfndata/ticks projects/erfs flysight'
+dirs='videos/skydiving videos/flying photos/skydiving music/albums photos/publish photos/public projects/tfndata/ctpticks projects/tfndata/shfestatic projects/tfndata/ticks projects/erfs flysight'
 
 for d in $dirs 
 do
