@@ -1,4 +1,18 @@
-dirs='videos/skydiving videos/flying photos/skydiving music/albums photos/publish photos/public projects/tfndata/ctpticks projects/tfndata/shfestatic projects/tfndata/ticks projects/erfs flysight'
+#!/bin/bash
+
+dirs=
+dirs+=" videos/skydiving"
+dirs+=" videos/flying"
+dirs+=" photos/skydiving"
+dirs+=" music/albums"
+dirs+=" photos/publish"
+dirs+=" photos/public" 
+dirs+=" projects/tfndata/ctpticks" 
+dirs+=" projects/tfndata/shfestatic" 
+dirs+=" projects/tfndata/ticks" 
+dirs+=" projects/erfs" 
+dirs+=" flysight"
+
 
 for d in $dirs 
 do
@@ -7,6 +21,8 @@ do
     then
         echo pushing $d 
         $HOME/bin/drive push --verbose --no-prompt=true --ignore-name-clashes=true $HOME/$d
-    fi 
+    else
+        echo skipping non-existing $d
+    fi
 
 done
