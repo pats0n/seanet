@@ -10,7 +10,9 @@ dirs+=" photos/public"
 dirs+=" projects/tfndata/ctpticks" 
 dirs+=" projects/tfndata/shfestatic" 
 dirs+=" projects/tfndata/ticks" 
+dirs+=" projects/tp_ticks" 
 dirs+=" projects/erfs" 
+dirs+=" source"
 dirs+=" flysight"
 
 
