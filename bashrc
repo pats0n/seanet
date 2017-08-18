@@ -17,7 +17,7 @@ alias kfix='cd $HOME/projects/tp/kfix'
 alias mdp3='cd $HOME/projects/tp/mdp3'
 
 #rtl
-alias rtl='cd $HOME/projects/tp/rtl'
+alias rtl='cd $HOME/projects/rtl'
 
 #seanet
 alias seanet="cd $HOME/seanet"
