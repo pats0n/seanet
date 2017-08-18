@@ -12,6 +12,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'vim-scripts/Vim-R-plugin'
 
 if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
