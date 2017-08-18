@@ -61,12 +61,12 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 source $HOME/seanet/git-prompt.sh
 
-if  [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'c0' ]] || [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnake' ]] || [[ `hostname` =~ 'akrasilnikov' ]]
+if  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnake' ]] || [[ `hostname` =~ 'akrasilnikov' ]]
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'kkc' ]] || [[ `hostname` =~ 'trd' ]]
+elif  [[ `hostname` =~ 'kkc' ]] || [[ `hostname` =~ 'trd' ]] || [[ `hostname` =~ 'ip-' ]]
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
