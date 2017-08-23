@@ -2,6 +2,9 @@
 
 alias vi="vim -p"
 
+#dot
+alias dot='cd $HOME/projects/dot'
+
 #tf
 alias tf='cd $HOME/projects/tf'
 
