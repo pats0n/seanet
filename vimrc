@@ -12,7 +12,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'vim-scripts/Vim-R-plugin'
 
 if v:version > 703
     Plugin 'Valloric/YouCompleteMe'
@@ -35,7 +34,7 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-command Wamake wa | make 
+command Wamake wa | make -j1
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
