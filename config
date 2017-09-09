@@ -1,12 +1,16 @@
 Host    *
-#        AddressFamily inet
-        ServerAliveInterval 5
-        ConnectTimeout 120
+       AddressFamily inet
+       ServerAliveInterval 5
+       ConnectTimeout 120
+       # ForwardX11 yes
 
- Host gitlab.quantrex.net
-         #HostName 103.75.202.98
-         HostName seanet.synology.me
-         #HostName gitlab.quantrex.net
+Host dotgit 
+        HostName seanet.synology.me
+        User git
+
+Host gitlab.quantrex.net
+        HostName seanet.synology.me
+        #HostName gitlab.quantrex.net
 
 Host seanet
        HostName seanet.synology.me
@@ -20,9 +24,6 @@ Host seashark
         HostName 192.168.0.11
         User root
 
-Host seasnake
-        HostName 192.168.0.103
-
 Host seahorse
         HostName 192.168.0.102
 
@@ -35,36 +36,51 @@ Host atsgit
 #        user asafonov
 
 Host tfngit
-
-        # HostName 192.168.122.103
+        # HostName bamljp3
         # User shfe
 
-        HostName seanet.synology.me
-        User asafonov
+         HostName seanet.synology.me
+         User asafonov
 
-#Host bamljp3
-#        HostName 192.168.122.103
+Host bamljp3
+       HostName 192.168.122.103
 
 Host tfnsrv
         HostName seanet.synology.me
 #        HostName 192.168.122.103
         User shfe
 
-Host qclcert
-        HostName 103.75.202.98
-        User alexey
+ Host qclwrk
+         HostName qcl-syd-guest01
 
-Host qclwrk
-        HostName qcl-syd-guest01
+ Host qclcme2
+         HostName qcl-chi-trd02
+         User qcprod
 
-Host qclcme2
-        HostName qcl-chi-trd02
-        User qcprod
+ Host qclcme3
+         HostName qcl-chi-trd03
+         User qcprod
 
-Host qclcme3
-        HostName qcl-chi-trd03
-        User qcprod
+ Host qclcme4
+         HostName qcl-chi-trd04
+         User qcprod
 
-Host qclcme4
-        HostName qcl-chi-trd04
-        User qcprod
+Host nodezero
+          HostName nodezero.dc.kkc.net
+          User tensorflow
+
+Host node12 
+        HostName node12.hk.kkc.net
+        User tensorflow
+
+Host node13
+          HostName node13.hk.kkc.net
+          User tensorflow
+
+Host node14 
+          HostName node14.hk.kkc.net
+          User tensorflow
+
+Host node15
+          HostName node15.hk.kkc.net
+          User tensorflow
