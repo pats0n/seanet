@@ -4,6 +4,7 @@ alias vi="vim -p"
 
 #dot
 alias dot='cd $HOME/projects/dot'
+alias dotcfg='cd $HOME/projects/dotdata/cfgs'
 
 #tf
 alias tf='cd $HOME/projects/tf'
