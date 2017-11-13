@@ -34,9 +34,10 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-command Wamake wa | make -j1
+command W wa | make -j1
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+command SelToClip execute 'call system("xclip",@0)'
 
 set relativenumber nu
 
