@@ -3,8 +3,9 @@
 alias vi="vim -p"
 
 #dot
-alias dot_paper1='cd $HOME/projects/dot'
-alias dot_paper0='cd $HOME/projects/dot_paper'
+alias dot='cd $HOME/projects/dot'
+alias dot_paper1='cd $HOME/projects/dot_paper_v1'
+alias dot_paper0='cd $HOME/projects/dot_paper_v0'
 alias dotcfg='cd $HOME/projects/dotdata/cfgs'
 
 #tf
