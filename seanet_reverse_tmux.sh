@@ -10,8 +10,8 @@ tmux has-session -t $SESSION &> /dev/null
 if [ $? != 0 ] 
 
 then
-    tmux new-session -s $SESSION  $home/reverse.sh
+    tmux new-session -s $SESSION -d $home/reverse.sh
 fi
 
 
-tmux attach-session -t $SESSION
+#/usr/bin/tmux attach-session -t $SESSION
