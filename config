@@ -1,24 +1,11 @@
 Host    *
-       AddressFamily inet
-       ServerAliveInterval 5
-       ConnectTimeout 120
-       # ForwardX11 yes
-
-Host dotgit 
-        HostName seanet.synology.me
-        User git
-
-Host gitlab.quantrex.net
-        HostName seanet.synology.me
-        #HostName gitlab.quantrex.net
+#       AddressFamily inet
+        ServerAliveInterval 5
+        ConnectTimeout 120
 
 Host seanet
        HostName seanet.synology.me
        user asafonov
-
-Host mtsdb 
-        HostName seanet.synology.me
-        user asafonov
 
 Host seashark 
         HostName 192.168.0.11
@@ -27,60 +14,22 @@ Host seashark
 Host seahorse
         HostName 192.168.0.102
 
-Host atsgit
-        HostName seanet.synology.me
-        user asafonov
-
-#Host hksvr1
-#        HostName 192.168.122.223
-#        user asafonov
-
 Host tfngit
-        # HostName bamljp3
-        # User shfe
-
-         HostName seanet.synology.me
-         User asafonov
-
-Host bamljp3
-       HostName 192.168.122.103
+        HostName seanet.synology.me
+        User asafonov
 
 Host tfnsrv
         HostName seanet.synology.me
-#        HostName 192.168.122.103
         User shfe
 
- Host qclwrk
-         HostName qcl-syd-guest01
+Host gitlab01.ingensoma.com
+        HostName seanet.synology.me
+        User git
 
- Host qclcme2
-         HostName qcl-chi-trd02
-         User qcprod
+Host dotsrv
+        HostName seanet.synology.me
+        User dot
 
- Host qclcme3
-         HostName qcl-chi-trd03
-         User qcprod
-
- Host qclcme4
-         HostName qcl-chi-trd04
-         User qcprod
-
-Host nodezero
-          HostName nodezero.dc.kkc.net
-          User tensorflow
-
-Host node12 
-        HostName node12.hk.kkc.net
-        User tensorflow
-
-Host node13
-          HostName node13.hk.kkc.net
-          User tensorflow
-
-Host node14 
-          HostName node14.hk.kkc.net
-          User tensorflow
-
-Host node15
-          HostName node15.hk.kkc.net
-          User tensorflow
+Host gitlab.quantrex.net
+        HostName seanet.synology.me
+        User git
