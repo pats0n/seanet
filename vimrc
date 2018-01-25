@@ -8,23 +8,16 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
-Plugin 'ekalinin/Dockerfile.vim'
-
-if v:version > 703
-    Plugin 'Valloric/YouCompleteMe'
-endif
-
-" Plugin 'powerline/powerline'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
 Plugin 'vim-utils/vim-man'
-Plugin 'hitode909/atom-auto-programming'
-.
+
 call vundle#end()
 
 syntax on
@@ -72,9 +65,6 @@ let g:ctrlp_show_hidden=1
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
-"powerline
-"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
-
 "airline
 let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#enabled = 1
@@ -83,5 +73,3 @@ colorscheme ron
 
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
-
-
