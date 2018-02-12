@@ -2,11 +2,11 @@
 
 alias vi="vim -p"
 
-#dot
-alias dot='cd $HOME/projects/dot'
-alias dot1='cd $HOME/projects/dot_paper_v1'
-alias dot0='cd $HOME/projects/dot_paper_v0'
-alias dotcfg='cd $HOME/projects/dotdata/cfgs'
+#fort
+alias fort='cd $HOME/projects/fort'
+alias fort1='cd $HOME/projects/fort_paper_v1'
+alias fort0='cd $HOME/projects/fort_paper_v0'
+alias fortcfg='cd $HOME/projects/fortdata/cfgs'
 
 #tf
 alias tf='cd $HOME/projects/tf'
