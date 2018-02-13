@@ -2,6 +2,9 @@
 
 alias vi="vim -p"
 
+#btc
+alias btc='cd $HOME/projects/btc'
+
 #fort
 alias fort='cd $HOME/projects/fort'
 alias fort1='cd $HOME/projects/fort_paper_v1'
