@@ -86,7 +86,7 @@ fi
 
 case "$-" in
 
-    *i*) pushd > /dev/null $(pwd); cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
+    *i*) pushd > /dev/null .; cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
 esac
 
