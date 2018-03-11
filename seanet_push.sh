@@ -1,7 +1,7 @@
 
 srv=seanet
 
-dirs='music/albums/ videos/skydiving/ videos/flying/ photos/publish/ photos/public/ photos/skydiving/ flysight/ videos/openshot/ photos/lrcat/ videos/dr/'
+dirs='music/albums/ videos/skydiving/ videos/ifly/ videos/flying/ photos/publish/ photos/public/ photos/skydiving/ flysight/ photos/lrcat/ videos/dr/'
 
 if [ "${1}k" != 'okk' ]
 then
