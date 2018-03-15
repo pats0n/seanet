@@ -2,14 +2,11 @@
 
 alias vi="vim -p"
 
-#btc
-alias btc='cd $HOME/projects/btc'
+#bfl
+alias bfl='cd $HOME/projects/bfl'
 
 #fort
 alias fort='cd $HOME/projects/fort'
-alias fort1='cd $HOME/projects/fort_paper_v1'
-alias fort0='cd $HOME/projects/fort_paper_v0'
-alias fortcfg='cd $HOME/projects/fortdata/cfgs'
 
 #tf
 alias tf='cd $HOME/projects/tf'
