@@ -22,14 +22,6 @@ Host tfnsrv
         HostName seanet.synology.me
         User shfe
 
-Host gitlab01.ingensoma.com
-        HostName seanet.synology.me
-        User git
-
-Host dotsrv
-        HostName seanet.synology.me
-        User dot
-
 Host gitlab.quantrex.net
         HostName seanet.synology.me
         User git
