@@ -70,7 +70,7 @@ then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'kkc' ]] || [[ `hostname` =~ 'trd' ]] || [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'grid' ]]
+elif  [[ `hostname` =~ 'kkc' ]] || [[ `hostname` =~ 'trd' ]] || [[ `hostname` =~ 'ip-' ]] || [[ `hostname` =~ 'grid' ]] || [[ `hostname` =~ 'btctrade' ]]
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
