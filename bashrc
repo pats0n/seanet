@@ -5,6 +5,9 @@ alias vi="vim -p"
 #bfl
 alias bfl='cd $HOME/projects/bfl'
 
+#bfx
+alias bfx='cd $HOME/projects/bfx'
+
 #fort
 alias fort='cd $HOME/projects/fort'
 
