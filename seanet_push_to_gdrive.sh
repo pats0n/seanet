@@ -9,6 +9,7 @@ dirs+=" music/albums"
 dirs+=" source"
 dirs+=" flysight"
 dirs+=" projects/bfldata" 
+dirs+=" projects/bfxdata" 
 dirs+=" vm" 
 
 #dirs+=" projects/erfs" 
