@@ -47,16 +47,6 @@ alias mo_optboard='cd `ls ~/projects/mo/optboard-2*/ -d | tail -1 `; cd bin;'
 alias mo_deman='cd `ls ~/projects/mo/deman-2*/ -d | tail -1 `; cd bin;'
 alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
-#mts
-alias mts='cd $HOME/projects/mts'
-alias mtsdb='cd $HOME/projects/mtsdb/bin'
-alias mtscfg='cd $HOME/projects/mtscfg'
-alias mtsroot='cd $HOME/projects/mtsroot'
-
-#rip500
-export LD_LIBRARY_PATH=/usr/lib/chromium-browser/libs:$LD_LIBRARY_PATH
-export PATH=/usr/lib/chromium-browser:$PATH
-
 #golang
 export GOPATH=$HOME
 
@@ -89,4 +79,6 @@ case "$-" in
     *i*) pushd > /dev/null .; cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
 esac
+
+alias rmake="make -C \`git rev-parse --show-toplevel\`"
 
