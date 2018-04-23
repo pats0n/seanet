@@ -11,6 +11,7 @@ dirs+=" flysight"
 dirs+=" projects/bfldata" 
 dirs+=" projects/bfxdata" 
 dirs+=" vm" 
+dirs+=" projects/btc_zabbix_data"
 
 #dirs+=" projects/erfs" 
 #dirs+=" photos/publish"
