@@ -1,8 +1,8 @@
 set smtp-use-starttls
-set nss-config-dir=~/.mozilla/firefox/f5kxzbdp.default/
-set ssl-verify=ignore
-set smtp=smtp://smtp.gmail.com:587
+set smtp=email-smtp.eu-west-1.amazonaws.com
 set smtp-auth=login
-set smtp-auth-user=
-set smtp-auth-password=
-set from=asafonov@pats0n.net
+set smtp-auth-user=AKIAJQNAM75OMXEWBI5Q
+set smtp-auth-password=As5kZQFxZSCGH416R3NOfxzSe8vHAchI48qKDIfeqO40
+set ssl-verify=ignore
+set nss-config-dir=/etc/pki/nssdb
+set from=pats0nn@gmail.com
