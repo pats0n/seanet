@@ -24,6 +24,7 @@ dirs+=" projects/btc_jenkins_backup"
 #dirs+=" projects/tp_ticks" 
 #dirs+=" projects/fortdata/ticks_v1" 
 #dirs+=" projects/fortdata/prods_v1" 
+#dirs+=" qcl_vault"
 
 for d in $dirs 
 do
