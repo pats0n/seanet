@@ -2,15 +2,15 @@
 srv=seanet
 
 dirs='music/albums/'
-dirs+=" videos/skydiving/"
-dir+=" videos/ifly/"
-dir+=" videos/flying/"
-dir+=" photos/publish/"
-dir+=" photos/public/"
-dir+=" photos/skydiving/"
-dir+=" flysight/"
-dir+=" photos/lrcat/"
-dir+=" videos/dr/"
+#dirs+=" videos/skydiving/"
+dirs+=" videos/ifly/"
+dirs+=" videos/flying/"
+dirs+=" photos/publish/"
+dirs+=" photos/public/"
+dirs+=" photos/skydiving/"
+dirs+=" flysight/"
+dirs+=" photos/lrcat/"
+dirs+=" videos/dr/"
 
 if [ "${1}k" != 'okk' ]
 then
