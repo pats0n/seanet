@@ -2,7 +2,7 @@
 srv=seanet
 
 dirs='music/albums/'
-#dirs+=" videos/skydiving/"
+dirs+=" videos/skydiving/"
 dirs+=" videos/ifly/"
 dirs+=" videos/flying/"
 dirs+=" photos/publish/"
