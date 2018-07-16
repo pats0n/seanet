@@ -2,6 +2,9 @@
 
 alias vi="vim -p"
 
+#cmeq2
+alias cmeq2='cd $HOME/projects/cmeq2'
+
 #bfl
 alias bfl='cd $HOME/projects/bfl'
 
