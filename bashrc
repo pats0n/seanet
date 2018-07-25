@@ -3,46 +3,46 @@
 alias vi="vim -p"
 
 #cmeq2
-alias cmeq2='cd $HOME/projects/fort/modules/cmeq2'
+alias cmeq2='cd ~/projects/fort/modules/cmeq2'
 
 #bfl
-alias bfl='cd $HOME/projects/fort/modules/bfl'
+alias bfl='cd ~/projects/fort/modules/bfl'
 
 #bfx
-alias bfx='cd $HOME/projects/bfx'
+alias bfx='cd ~/projects/bfx'
 
 #fort
-alias fort='cd $HOME/projects/fort'
+alias fort='cd ~/projects/fort'
 
 #tf
-alias tf='cd $HOME/projects/tf'
+alias tf='cd ~/projects/tf'
 
 #tp
-alias tp='cd $HOME/projects/tp'
+alias tp='cd ~/projects/tp'
 
 #kfix
-alias kfix='cd $HOME/projects/tp/kfix'
+alias kfix='cd ~/projects/tp/kfix'
 
 #mdp3
-alias mdp3='cd $HOME/projects/tp/mdp3'
+alias mdp3='cd ~/projects/tp/mdp3'
 
 #rtl
-alias rtl='cd $HOME/projects/rtl'
+alias rtl='cd ~/projects/rtl'
 
 #seanet
-alias seanet="cd $HOME/seanet"
+alias seanet="cd ~/seanet"
 
 #tfn
-alias tfn='cd $HOME/projects/tfn'
-alias tfncfg='cd $HOME/projects/tfndata/cfgs'
+alias tfn='cd ~/projects/tfn'
+alias tfncfg='cd ~/projects/tfndata/cfgs'
 
 #ats
-alias atsdb="cd $HOME/projects/atsdb/bin"
-alias atste="cd $HOME/projects/atste/dev/strats"
+alias atsdb="cd ~/projects/atsdb/bin"
+alias atste="cd ~/projects/atste/dev/strats"
 
 #mo
-alias mo_root="cd $HOME/projects/mo/bin"
-alias mo_dev="cd $HOME/projects/mo/dev/bin"
+alias mo_root="cd ~/projects/mo/bin"
+alias mo_dev="cd ~/projects/mo/dev/bin"
 
 alias mo_prod='cd `ls ~/projects/mo/prod-2*/ -d | tail -1 `; cd bin;'
 alias mo_scview='cd `ls ~/projects/mo/scview-2*/ -d | tail -1 `; cd bin;'
@@ -51,15 +51,15 @@ alias mo_deman='cd `ls ~/projects/mo/deman-2*/ -d | tail -1 `; cd bin;'
 alias mo_hvol='cd `ls ~/projects/mo/hvol-2*/ -d | tail -1 `; cd bin;'
 
 #golang
-export GOPATH=$HOME
+export GOPATH=~
 
 #local packages
-export PATH=$HOME/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/lib64:$HOME/lib:$LD_LIBRARY_PATH
+export PATH=~/bin:$PATH
+export LD_LIBRARY_PATH=~/lib64:~/lib:$LD_LIBRARY_PATH
 
 GIT_PS1_SHOWCOLORHINTS=1
 
-source $HOME/seanet/git-prompt.sh
+source ~/seanet/git-prompt.sh
 
 if  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] 
 then
@@ -79,7 +79,7 @@ fi
 
 case "$-" in
 
-    *i*) pushd > /dev/null .; cd $HOME/seanet; git pull > /dev/null; git status -s; popd > /dev/null
+    *i*) pushd > /dev/null .; cd ~/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
 esac
 
