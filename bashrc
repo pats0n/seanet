@@ -61,7 +61,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 source ~/seanet/git-prompt.sh
 
-if  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] 
+if  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] || [[ `hostname` =~ 'QCL-' ]] 
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
