@@ -8,6 +8,9 @@ alias cmeq2='cd ~/projects/fort/modules/cmeq2'
 #bfl
 alias bfl='cd ~/projects/fort/modules/bfl'
 
+#bmx
+alias bmx='cd ~/projects/fort/modules/bmx'
+
 #bfx
 alias bfx='cd ~/projects/bfx'
 
