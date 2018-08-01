@@ -12,7 +12,7 @@ alias bfl='cd ~/projects/fort/modules/bfl'
 alias bmx='cd ~/projects/fort/modules/bmx'
 
 #bfx
-alias bfx='cd ~/projects/bfx'
+alias bfx='cd ~/projects/fort/modules/bfx'
 
 #fort
 alias fort='cd ~/projects/fort'
@@ -69,7 +69,7 @@ then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'btc' ]]||  [[ `hostname` =~ 'bfl' ]]
+elif  [[ `hostname` =~ 'btc' ]]
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
