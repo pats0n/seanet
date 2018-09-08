@@ -14,6 +14,10 @@ alias bmx='cd ~/projects/fort/modules/bmx'
 #bfx
 alias bfx='cd ~/projects/fort/modules/bfx'
 
+#lqd
+alias lqd='cd ~/projects/fort/modules/lqd'
+
+
 #fort
 alias fort='cd ~/projects/fort'
 
