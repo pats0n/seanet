@@ -9,6 +9,7 @@ dirs+=' videos/flying/'
 dirs+=' photos/skydiving/'
 dirs+=' flysight/'
 dirs+=' videos/dr/'
+dirs+=' videos/ifly/'
 
 if [ "${1}k" != 'okk' ]
 then
