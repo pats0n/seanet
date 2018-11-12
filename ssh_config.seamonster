@@ -1,0 +1,65 @@
+Host    *
+#       AddressFamily inet
+        ServerAliveInterval 5
+        ConnectTimeout 120
+
+Host seanet
+       HostName aurora01.synology.me
+       user asafonov
+
+Host seashark 
+        HostName 192.168.0.11
+        User root
+
+Host seamonster
+        HostName 192.168.0.105
+
+Host tfngit
+        HostName aurora01.synology.me
+        User asafonov
+
+Host tfnsrv
+        HostName aurora01.synology.me
+        User shfe
+
+# Host gitlab.quantrex.net
+        # HostName aurora01.synology.me
+        # User git
+        #
+
+Host btchub01
+        Hostname btchub01.pats0n.net
+        User btc
+
+Host btcvault01
+        HostName aurora01.synology.me
+        User btc
+
+Host btccapture02
+        HostName btccapture02.pats0n.net
+        User btc 
+
+Host btctrade01
+        HostName btctrade01.pats0n.net
+        User btc
+
+Host qcl-sin-gw01
+        Hostname 13.251.15.166
+        User vyos
+
+Host btcjenkins
+        Hostname btchub01.pats0n.net
+        User jenkins
+
+Host qcl_hk_pccw
+        Hostname 202.82.229.121
+        User qcadmin
+
+Host qcl_acl_tpg
+        Hostname 203.194.45.138
+        User qcadmin
+
+Host cmeq2-server01
+        Hostname qclsing.asuscomm.com
+        User cmeq2
+
