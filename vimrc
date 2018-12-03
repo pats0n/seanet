@@ -54,8 +54,9 @@ let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp' ] 
-let g:syntastic_python_checkers = [ 'pylint' ] 
-let g:syntastic_python_pylint_args =  '--errors-only'
+"let g:syntastic_python_checkers = [ 'pylint' ] 
+let g:syntastic_python_checkers = [ 'pyflakes' ] 
+"let g:syntastic_python_pylint_args =  '--errors-only'
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
 "ctrlp

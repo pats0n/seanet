@@ -26,3 +26,5 @@ SHELL=/bin/bash
 00 04 * * * seanet/seanet_backup_git_to_gdrive.sh 2>&1 | s-nail  -s "seanet/seanet_backup_git_to_gdrive.sh" pats0nn@gmail.com
 
 00 05 * * * seanet/seanet_push_to_gdrive.sh 2>&1 | s-nail -s "seanet/seanet_push_to_gdrive.sh" pats0nn@gmail.com
+
+*/10 * * * * rsync -va --delete  cmeq2-server01:cmeq2_shared/ cmeq2_shared/ 

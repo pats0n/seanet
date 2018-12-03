@@ -5,13 +5,14 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/sda1 during installation
-UUID=88cc7bad-ddb2-4873-9bbb-1910b2d9fbbf /               ext4    errors=remount-ro 0       1
-UUID=a866a672-1b35-49a4-a7e7-7d85d3b3ed68 /mnt/b              ext4    errors=remount-ro 0       1
+# / was on /dev/sda2 during installation
+UUID=a0d70ecc-eab4-4ef4-a7b9-fcf59864a099 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda1 during installation
+UUID=38D6-9DF1  /boot/efi       vfat    umask=0077      0       1
 /swapfile                                 none            swap    sw              0       0
-
 
 192.168.0.11:/volume1/vault /mnt/vault  nfs4    rw,nolock   0   0
 192.168.0.11:/volume1/svn /mnt/svn  nfs4    rw,nolock   0   0
 192.168.0.11:/volume1/kkc /mnt/kkc  nfs4    rw,nolock   0   0
 192.168.0.11:/volume1/btc /mnt/btc  nfs4    rw,nolock   0   0
+192.168.0.11:/volume1/cmeq2 /mnt/cmeq2  nfs4    rw,nolock   0   0
