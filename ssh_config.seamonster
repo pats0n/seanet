@@ -1,7 +1,8 @@
 Host    *
 #       AddressFamily inet
-        ServerAliveInterval 5
+#       ServerAliveInterval 5
         ConnectTimeout 120
+        StrictHostKeyChecking  no
 
 Host seanet
        HostName aurora01.synology.me
@@ -12,7 +13,7 @@ Host seashark
         User root
 
 Host seamonster
-        HostName 192.168.0.105
+        HostName 192.168.0.102
 
 Host tfngit
         HostName aurora01.synology.me
@@ -61,5 +62,19 @@ Host qcl_acl_tpg
 
 Host cmeq2-server01
         Hostname qclsing.asuscomm.com
+        User cmeq2
+
+Host cmeq2-ic01
+        Hostname qclsing.asuscomm.com
+        User rvine
+        Port 1022
+
+Host cmeq2-client01
+        Hostname qclsing.asuscomm.com
+        User cmeq2
+        Port 1023
+
+Host cmeq2-vault01
+        Hostname aurora01.synology.me
         User cmeq2
 
