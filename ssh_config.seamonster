@@ -52,6 +52,9 @@ Host btcjenkins
         Hostname btchub01.pats0n.net
         User jenkins
 
+Host grid
+        Hostname qcl-syd-grid21
+
 Host qcl_hk_pccw
         Hostname 202.82.229.121
         User qcadmin
@@ -60,19 +63,24 @@ Host qcl_acl_tpg
         Hostname 203.194.45.138
         User qcadmin
 
-Host cmeq2-server01
+Host bedok
         Hostname qclsing.asuscomm.com
         User cmeq2
 
-Host cmeq2-ic01
-        Hostname qclsing.asuscomm.com
+Host cmeq2-server01
+        Hostname 192.168.1.200
+        User cmeq2
+
+Host cmeq2-ic01 
+        Hostname 192.168.1.111 
         User rvine
-        Port 1022
 
 Host cmeq2-client01
-        Hostname qclsing.asuscomm.com
+        Hostname 192.168.1.63
         User cmeq2
-        Port 1023
+
+Host cmeq2-dev01
+        Hostname 192.168.1.177
 
 Host cmeq2-vault01
         Hostname aurora01.synology.me
