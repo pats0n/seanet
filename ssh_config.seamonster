@@ -55,11 +55,11 @@ Host btcjenkins
 Host grid
         Hostname qcl-syd-grid21
 
-Host qcl_hk_pccw
+Host qcl-hkg-pccw
         Hostname 202.82.229.121
         User qcadmin
 
-Host qcl_acl_tpg
+Host qcl-syd-tpg
         Hostname 203.194.45.138
         User qcadmin
 
