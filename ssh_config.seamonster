@@ -88,7 +88,6 @@ Host cmeq2-vault01
 
 Host cmeq2-bbg01
         Hostname 192.168.1.73
-        
         Hostname aurora01.synology.me
         User cmeq2
 
