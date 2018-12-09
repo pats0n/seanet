@@ -90,3 +90,7 @@ Host cmeq2-bbg01
         Hostname 192.168.1.73
         User rvine
 
+Host cmeq2-nfs01
+        Hostname 192.168.1.8
+        User admin
+
