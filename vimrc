@@ -76,3 +76,5 @@ colorscheme ron
 
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
+
+set encoding=utf-8
