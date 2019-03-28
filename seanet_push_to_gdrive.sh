@@ -4,6 +4,7 @@ dirs=
 dirs+=" videos/skydiving"
 dirs+=" videos/flying"
 dirs+=" videos/dr"
+dirs+=" videos/flystation"
 dirs+=" photos/skydiving"
 dirs+=" music/albums"
 dirs+=" source"
