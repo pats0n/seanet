@@ -2,6 +2,9 @@
 
 alias vi="vim -p"
 
+#mixer
+alias mixer='cd ~/projects/fort/modules/mixer'
+
 #cmeq2
 alias cmeq2='cd ~/projects/fort/modules/cmeq2'
 
