@@ -100,3 +100,5 @@ esac
 
 alias rmake="make -C \`git rev-parse --show-toplevel\`"
 
+export PATH=/usr/lib/dart/bin:$PATH
+
