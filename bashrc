@@ -81,7 +81,7 @@ then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnail' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] || [[ `hostname` =~ 'QCL-' ]] || [[ `hostname` =~ 'cmeq2-' ]] 
+elif  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnail' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] || [[ `hostname` =~ 'jst-' ]] || [[ `hostname` =~ 'cmeq2-' ]] 
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
