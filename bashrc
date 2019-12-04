@@ -23,6 +23,9 @@ alias bfx='cd ~/projects/fort/modules/bfx'
 #lqd
 alias lqd='cd ~/projects/fort/modules/lqd'
 
+#okx
+alias okx='cd ~/projects/fort/modules/okx'
+
 #huo
 alias huo='cd ~/projects/fort/modules/huo'
 
