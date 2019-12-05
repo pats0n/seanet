@@ -26,6 +26,9 @@ alias lqd='cd ~/projects/fort/modules/lqd'
 #okx
 alias okx='cd ~/projects/fort/modules/okx'
 
+#btse
+alias btse='cd ~/projects/fort/modules/btse'
+
 #huo
 alias huo='cd ~/projects/fort/modules/huo'
 
