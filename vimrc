@@ -47,7 +47,7 @@ set switchbuf=useopen,usetab,newtab
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
-let g:ycm_python_binary_path='python'
+let g:ycm_python_binary_path='python3'
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
