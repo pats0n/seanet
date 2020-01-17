@@ -57,10 +57,13 @@ let g:pydoc_open_cmd = 'vsp'
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp'] 
 
-let g:syntastic_python_checkers = [ 'flake8', 'pylint', 'python' ] 
+" let g:syntastic_python_checkers = [ 'flake8', 'pylint', 'python' ] 
 
-" let g:syntastic_python_checkers = [ 'flake8' ] 
+let g:syntastic_python_checkers = [ 'flake8' ] 
 let g:syntastic_python_flake8_args = ' --ignore E225,E226,E302,E231,E201,E303,E228,E202,E501'
+
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_pylint_exec = 'pylint3'
 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
