@@ -3,4 +3,6 @@
 disable=
     missing-docstring,
     bad-whitespace,
-    invalid-name
+    invalid-name,
+    line-too-long,
+    broad-except
