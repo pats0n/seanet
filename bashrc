@@ -105,6 +105,7 @@ case "$-" in
 esac
 
 alias rmake="make -C \`git rev-parse --show-toplevel\`"
+alias gitfclean='git submodule foreach git clean -xdf'
 
 export PATH=/usr/lib/dart/bin:$PATH
 
