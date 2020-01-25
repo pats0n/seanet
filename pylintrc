@@ -2,7 +2,6 @@
 
 disable=
     missing-docstring,
-    bad-whitespace,
     invalid-name,
     line-too-long,
     broad-except
