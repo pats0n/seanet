@@ -3,5 +3,4 @@
 disable=
     missing-docstring,
     invalid-name,
-    line-too-long,
     broad-except
