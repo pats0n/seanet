@@ -33,6 +33,7 @@ command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go
 command SelToClip execute 'call system("xclip",@0)'
 
 command Yapf %!yapf3
+command Pylint w | SyntasticCheck pylint
 
 set relativenumber nu
 
@@ -62,7 +63,8 @@ let g:syntastic_disabled_filetypes = ['cpp' , 'hpp']
 " let g:syntastic_python_checkers = [ 'flake8', 'pylint', 'python' ] 
 
 let g:syntastic_python_checkers = [ 'flake8' ] 
-let g:syntastic_python_flake8_args = ' --ignore E225,E226,E302,E231,E201,E303,E228,E202,E501'
+" let g:syntastic_python_flake8_args = ' --ignore E225,E226,E302,E231,E201,E303,E228,E202,E501,E402'
+ let g:syntastic_python_flake8_args = ' --ignore E402'
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint3'

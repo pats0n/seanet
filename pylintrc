@@ -3,4 +3,5 @@
 disable=
     missing-docstring,
     invalid-name,
-    broad-except
+    broad-except,
+    wrong-import-position
