@@ -5,3 +5,7 @@ disable=
     invalid-name,
     broad-except,
     wrong-import-position
+
+[LOGGING]
+
+logging-format-style=fstr
