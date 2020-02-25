@@ -5,9 +5,6 @@ alias vi="vim -p"
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
 
-#cmeq2
-alias cmeq2='cd ~/projects/fort/modules/cmeq2'
-
 #bfl
 alias bfl='cd ~/projects/fort/modules/bfl'
 
@@ -36,7 +33,7 @@ alias huo='cd ~/projects/fort/modules/huo'
 alias fort='cd ~/projects/fort'
 
 #golang
-export GOPATH=~
+export GOPATH=$HOME
 
 #local packages
 export PATH=~/bin:$PATH
@@ -50,7 +47,7 @@ then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'seahorse' ]] || [[ `hostname` =~ 'seasnail' ]] || [[ `hostname` =~ 'seamonster' ]] || [[ `hostname` =~ 'qcl-' ]] || [[ `hostname` =~ 'jst-' ]] 
+elif  [[ `hostname` =~ 'sea' ]] || [[ `hostname` =~ 'jst-' ]] 
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
