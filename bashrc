@@ -1,6 +1,7 @@
 #!/bin/bash
 
 alias vi="vim -p"
+alias vim="vim -p"
 
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
