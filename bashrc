@@ -48,7 +48,7 @@ then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
-elif  [[ `hostname` =~ 'sea' ]] || [[ `hostname` =~ 'jst-' ]] 
+elif  [[ `hostname` =~ 'grid' ]] 
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
