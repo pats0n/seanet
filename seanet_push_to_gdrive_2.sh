@@ -2,7 +2,6 @@
 
 dirs=
 dirs+=" projects/bfldata" 
-dirs+=" projects/bfl_states" 
 dirs+=" projects/bfxdata" 
 dirs+=" projects/bmxdata" 
 dirs+=" projects/bnbdata" 
@@ -10,9 +9,15 @@ dirs+=" projects/lqddata"
 dirs+=" projects/huodata" 
 dirs+=" projects/okxdata" 
 dirs+=" projects/btsedata" 
-dirs+=" projects/huo_states" 
-dirs+=" projects/cmeq2_data" 
 
+dirs+=" projects/bfl_states" 
+dirs+=" projects/huo_states" 
+
+dirs+=" projects/btc_zabbix_backup"
+dirs+=" projects/btc_jenkins_backup"
+dirs+=" projects/btc_influx_backup"
+dirs+=" projects/btc_grafana_backup"
+d
 for d in $dirs 
 do
 
