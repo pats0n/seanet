@@ -35,6 +35,8 @@ command SelToClip execute 'call system("xclip",@0)'
 command Yapf %!yapf3
 command Pylint w | SyntasticCheck pylint
 
+command FixIt YcmCompleter FixIt
+
 set relativenumber nu
 
 set hlsearch
