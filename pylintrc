@@ -4,6 +4,7 @@ disable=
     missing-docstring,
     invalid-name,
     broad-except,
+    line-too-long,
     wrong-import-position
 
 [LOGGING]
