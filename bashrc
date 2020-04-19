@@ -3,6 +3,9 @@
 alias vi="vim -p"
 alias vim="vim -p"
 
+#blx
+alias blx='cd ~/projects/blx'
+
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
 
