@@ -5,7 +5,8 @@ disable=
     invalid-name,
     broad-except,
     line-too-long,
-    wrong-import-position
+    wrong-import-position,
+    import-outside-toplevel
 
 [LOGGING]
 
