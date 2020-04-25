@@ -17,6 +17,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
+Plugin 'pignacio/vim-yapf-format'
 
 call vundle#end()
 
@@ -26,16 +27,6 @@ filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
-
-command W wa | make -j1
-
-command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
-command SelToClip execute 'call system("xclip",@0)'
-
-command Yapf %!yapf3
-command Pylint w | SyntasticCheck pylint
-
-command FixIt YcmCompleter FixIt
 
 set relativenumber nu
 
@@ -58,7 +49,6 @@ let g:ycm_python_binary_path='python3'
 let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
-" let g:syntastic_debug=3
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp'] 
 
@@ -90,3 +80,14 @@ highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
 
 set encoding=utf-8
+
+command W wa | make -j1
+
+command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+command SelToClip execute 'call system("xclip",@0)'
+
+command Pylint w | SyntasticCheck pylint
+
+command FixIt YcmCompleter FixIt
+
+
