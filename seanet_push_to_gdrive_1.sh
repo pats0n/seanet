@@ -4,7 +4,7 @@ dirs=
 
 #dirs+=" photos/publish"
 #dirs+=" photos/public" 
-#dirs+=" photos/skydiving"
+dirs+=" photos/skydiving"
 
 dirs+=" videos/flystation"
 dirs+=" videos/skydiving"
