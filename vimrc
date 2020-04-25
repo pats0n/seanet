@@ -52,8 +52,6 @@ let g:pydoc_open_cmd = 'vsp'
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp'] 
 
-" let g:syntastic_python_checkers = [ 'flake8', 'pylint', 'python' ] 
-
 let g:syntastic_python_checkers = [ 'flake8' ] 
 let g:syntastic_python_flake8_args = ' --ignore E402,E501,W504'
 
@@ -84,6 +82,7 @@ set encoding=utf-8
 command W wa | make -j1
 
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+
 command SelToClip execute 'call system("xclip",@0)'
 
 command Pylint w | SyntasticCheck pylint
