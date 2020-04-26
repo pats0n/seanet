@@ -18,6 +18,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
 Plugin 'pignacio/vim-yapf-format'
+" Plugin 'ncm2/ncm2'
+" Plugin 'roxma/nvim-yarp'
+" Plugin 'ncm2/ncm2-jedi'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 
@@ -44,6 +48,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
+let g:ycm_filetype_blacklist={ 'python':1 }
+
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
@@ -88,5 +94,3 @@ command SelToClip execute 'call system("xclip",@0)'
 command Pylint w | SyntasticCheck pylint
 
 command FixIt YcmCompleter FixIt
-
-

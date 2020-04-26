@@ -1,7 +1,7 @@
 #!/bin/bash
 
 alias vi="nvim -p"
-alias vim="nvimi -p"
+alias vim="nvim -p"
 
 #blx
 alias blx='cd ~/projects/blx'
