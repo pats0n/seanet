@@ -16,8 +16,8 @@ dirs+=" music/albums"
 dirs+=" flysight"
 dirs+=" source"
 
-dirs+=" projects/cmeq2_data" 
-dirs+=" projects/tp_ticks" 
+# dirs+=" projects/cmeq2_data" 
+# dirs+=" projects/tp_ticks" 
 
 dirs+=" vm" 
 
