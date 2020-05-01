@@ -3,8 +3,8 @@
 alias vi="nvim -p"
 alias vim="nvim -p"
 
-#blx
-alias blx='cd ~/projects/blx'
+#m3
+alias m3='cd ~/projects/m3'
 
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
