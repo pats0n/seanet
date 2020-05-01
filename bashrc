@@ -9,6 +9,9 @@ alias m3='cd ~/projects/m3'
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
 
+#strats
+alias strats='cd ~/projects/fort/modules/strats'
+
 #bfl
 alias bfl='cd ~/projects/fort/modules/bfl'
 
