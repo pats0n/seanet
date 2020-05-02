@@ -49,7 +49,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 source ~/seanet/git-prompt.sh
 
-if  [[ `whoami` =~ 'btc' ]]  || [[ `hostname` =~ 'blockex' ]]
+if  [[ `whoami` =~ 'btc' ]]  || [[ `hostname` =~ 'jst' ]]
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
