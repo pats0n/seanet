@@ -1,6 +1,9 @@
 cd `dirname $0`
 
-echo source ~/seanet/vimrc > ~/.vimrc
+mkdir -p ~/.config/nvim
+
+ln -s  ~/seanet/vimrc  ~/.vimrc
+ln -s  ~/seanet/vimrc  ~/.config/nvim/init.vim
 
 mkdir -p ~/.vim/bundle
 
