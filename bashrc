@@ -49,7 +49,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 source ~/seanet/git-prompt.sh
 
-if  [[ `whoami` =~ 'btc' ]]  || [[ `hostname` =~ 'jst' ]]
+if  [[ `whoami` =~ 'btc' ]]  
 then
 
     PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
@@ -58,6 +58,11 @@ elif  [[ `hostname` =~ 'grid' ]]
 then
 
     PS1='\[\e[1;32m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
+
+elif [[ `hostname` =~ 'jst' ]]
+then
+
+    PS1='\[\e[1;31m\][\u@\h \W]$(__git_ps1) $STY \$\[\e[0m\] '
 
 else
 
@@ -69,7 +74,7 @@ case "$-" in
 
     *i*) pushd > /dev/null .; cd ~/seanet; git pull > /dev/null; git status -s; popd > /dev/null
 
-esac
+    esac
 
-alias rmake="make -C \`git rev-parse --show-toplevel\`"
-alias gitfclean='git submodule foreach git clean -xdf'
+    alias rmake="make -C \`git rev-parse --show-toplevel\`"
+    alias gitfclean='git submodule foreach git clean -xdf'
