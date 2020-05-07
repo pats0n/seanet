@@ -9,6 +9,7 @@ dirs+=" projects/lqddata"
 dirs+=" projects/huodata" 
 dirs+=" projects/okxdata" 
 dirs+=" projects/btsedata" 
+dirs+=" projects/coinbase" 
 
 dirs+=" projects/bfl_states" 
 dirs+=" projects/huo_states" 
