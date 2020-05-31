@@ -39,6 +39,10 @@ alias huo='cd ~/projects/fort/modules/huo'
 #fort
 alias fort='cd ~/projects/fort'
 
+#cg
+
+alias cg='cd ~/projects/cg'
+
 #golang
 export GOPATH=$HOME
 
