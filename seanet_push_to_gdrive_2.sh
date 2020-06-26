@@ -12,7 +12,8 @@ dirs+=" projects/btsedata"
 dirs+=" projects/coinbase" 
 
 dirs+=" projects/bfl_states" 
-dirs+=" projects/huo_states" 
+dirs+=" projects/srv02_states" 
+dirs+=" projects/srv03_states" 
 
 dirs+=" projects/btc_zabbix_backup"
 dirs+=" projects/btc_jenkins_backup"
