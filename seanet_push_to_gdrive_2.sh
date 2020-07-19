@@ -20,6 +20,8 @@ dirs+=" projects/btc_jenkins_backup"
 dirs+=" projects/btc_influx_backup"
 dirs+=" projects/btc_grafana_backup"
 
+dirs+=" projects/m3_capture"
+
 for d in $dirs 
 do
 
