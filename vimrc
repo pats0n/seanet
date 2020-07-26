@@ -25,7 +25,7 @@ Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
 Plugin 'ncm2/ncm2-jedi'
 Plugin 'fatih/vim-go'
-Plugin 'Shougo/deoplete.nvim'
+" Plugin 'Shougo/deoplete.nvim'
 
 call vundle#end()
 
@@ -36,7 +36,7 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+" call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 set relativenumber nu
 
@@ -64,7 +64,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
-let g:ycm_filetype_blacklist={ 'python':1, 'go':1 }
+" let g:ycm_filetype_blacklist={ 'python':1, 'go':1 }
+let g:ycm_filetype_blacklist={ 'python':1 }
 
 "jedi-vim
 let g:jedi#auto_initialization = 1
