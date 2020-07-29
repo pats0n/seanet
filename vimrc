@@ -24,8 +24,11 @@ Plugin 'ncm2/ncm2'
 Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
 Plugin 'ncm2/ncm2-jedi'
+" Plugin 'ncm2/ncm2-github'
+Plugin 'ncm2/ncm2-tmux'
+" Plugin 'ncm2/ncm2-go'
 Plugin 'fatih/vim-go'
-" Plugin 'Shougo/deoplete.nvim'
+
 
 call vundle#end()
 
@@ -36,7 +39,6 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-" call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 set relativenumber nu
 
@@ -49,15 +51,15 @@ set splitright
 
 set switchbuf=useopen,usetab,newtab
 
-
 "ncm2
-autocmd BufEnter *.py call ncm2#enable_for_buffer()
+let blacklist = ['cpp', 'hpp', 'go'] 
+" let blacklist = ['cpp', 'hpp'] 
+autocmd BufEnter * if index(blacklist, &ft) < 0 | call ncm2#enable_for_buffer()
 set completeopt=menuone,noselect,noinsert
 " make it FAST
 let ncm2#popup_delay = 5
 let ncm2#complete_length = [[1,1]]
 let g:ncm2#matcher = 'substrfuzzy'
-
 
 "ycm
 let g:ycm_confirm_extra_conf = 0
@@ -81,9 +83,8 @@ let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
 let g:syntastic_always_populate_loc_list=1
-let g:syntastic_disabled_filetypes = ['cpp' , 'hpp'] 
+let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
-" let g:syntastic_python_checkers = [ 'flake8' ] 
 let g:syntastic_python_checkers = [ 'pylint' ] 
 let g:syntastic_python_flake8_args = ' --ignore E402,E501,W504,E126'
 
