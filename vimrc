@@ -28,6 +28,8 @@ Plugin 'ncm2/ncm2-jedi'
 Plugin 'ncm2/ncm2-tmux'
 " Plugin 'ncm2/ncm2-go'
 Plugin 'fatih/vim-go'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 
 call vundle#end()
