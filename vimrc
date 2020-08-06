@@ -18,12 +18,14 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
 Plugin 'pignacio/vim-yapf-format'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 Plugin 'roxma/nvim-yarp'
+Plugin 'Shougo/neosnippet.vim'
 Plugin 'ncm2/ncm2'
 Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
 Plugin 'ncm2/ncm2-jedi'
+Plugin 'ncm2/ncm2-neosnippet'
 " Plugin 'ncm2/ncm2-github'
 Plugin 'ncm2/ncm2-tmux'
 " Plugin 'ncm2/ncm2-go'
@@ -53,9 +55,14 @@ set splitright
 
 set switchbuf=useopen,usetab,newtab
 
-"fzf.vim
+" neosnippet
+inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
+"fzf.vim
 map <C-P>  :GitFiles<CR>
+
+"yapf-format
+map <C-F> :YapfFullFormat<CR>
 
 "ncm2
 let blacklist = ['cpp', 'hpp', 'go'] 
@@ -76,13 +83,13 @@ let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
 
 "jedi-vim
-let g:jedi#auto_initialization = 1
-let g:jedi#completions_enabled = 0
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#smart_auto_mappings = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#completions_command = ""
-let g:jedi#show_call_signatures = "1"
+" let g:jedi#auto_initialization = 1
+" let g:jedi#completions_enabled = 0
+" let g:jedi#auto_vim_configuration = 0
+" let g:jedi#smart_auto_mappings = 0
+" let g:jedi#popup_on_dot = 0
+" let g:jedi#completions_command = ""
+" let g:jedi#show_call_signatures = "1"
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
@@ -92,7 +99,6 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
 let g:syntastic_python_checkers = [ 'pylint' ] 
-let g:syntastic_python_flake8_args = ' --ignore E402,E501,W504,E126'
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
@@ -125,5 +131,6 @@ command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go
 command SelToClip execute 'call system("xclip",@0)'
 
 command Pylint w | SyntasticCheck pylint
+command MyPy w | SyntasticCheck mypy
 
 command FixIt YcmCompleter FixIt
