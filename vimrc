@@ -53,6 +53,10 @@ set splitright
 
 set switchbuf=useopen,usetab,newtab
 
+"fzf.vim
+
+map <C-P>  :GitFiles<CR>
+
 "ncm2
 let blacklist = ['cpp', 'hpp', 'go'] 
 " let blacklist = ['cpp', 'hpp'] 
@@ -96,8 +100,8 @@ let g:syntastic_python_pylint_exec = 'pylint'
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 
 "ctrlp
-set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
-let g:ctrlp_show_hidden=1
+" set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
+" let g:ctrlp_show_hidden=1
 
 "fugitive
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
