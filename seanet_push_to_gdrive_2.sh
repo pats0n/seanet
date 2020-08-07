@@ -21,6 +21,7 @@ dirs+=" projects/btc_influx_backup"
 dirs+=" projects/btc_grafana_backup"
 
 dirs+=" projects/m3_capture"
+dirs+=" projects/m3_ticks"
 
 for d in $dirs 
 do
