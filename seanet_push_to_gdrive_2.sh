@@ -1,6 +1,7 @@
 #!/bin/bash
 
 dirs=
+dirs+=" projects/m3_ticks"
 dirs+=" projects/bfldata" 
 dirs+=" projects/bfxdata" 
 dirs+=" projects/bmxdata" 
@@ -21,7 +22,6 @@ dirs+=" projects/btc_influx_backup"
 dirs+=" projects/btc_grafana_backup"
 
 dirs+=" projects/m3_capture"
-dirs+=" projects/m3_ticks"
 
 for d in $dirs 
 do
