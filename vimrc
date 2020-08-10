@@ -10,7 +10,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
-" Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -18,7 +17,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
 Plugin 'pignacio/vim-yapf-format'
-" Plugin 'davidhalter/jedi-vim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'ncm2/ncm2'
@@ -26,7 +24,6 @@ Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
 Plugin 'ncm2/ncm2-jedi'
 Plugin 'ncm2/ncm2-neosnippet'
-" Plugin 'ncm2/ncm2-github'
 Plugin 'ncm2/ncm2-tmux'
 " Plugin 'ncm2/ncm2-go'
 Plugin 'fatih/vim-go'
@@ -81,15 +78,6 @@ let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
 " let g:ycm_filetype_blacklist={ 'python':1, 'go':1 }
 let g:ycm_filetype_blacklist={ 'python':1 }
-
-"jedi-vim
-" let g:jedi#auto_initialization = 1
-" let g:jedi#completions_enabled = 0
-" let g:jedi#auto_vim_configuration = 0
-" let g:jedi#smart_auto_mappings = 0
-" let g:jedi#popup_on_dot = 0
-" let g:jedi#completions_command = ""
-" let g:jedi#show_call_signatures = "1"
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
