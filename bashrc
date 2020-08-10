@@ -6,6 +6,9 @@ alias vim="nvim -p"
 #m3
 alias m3='cd ~/projects/m3'
 
+#mdc
+alias mdc='cd ~/projects/m3/mdc'
+
 #blx
 alias blx='cd ~/projects/m3/blx'
 
