@@ -1,13 +1,13 @@
 #!/bin/bash
 
 dirs=
+dirs+=" projects/huodata" 
 dirs+=" projects/m3_ticks"
 dirs+=" projects/bfldata" 
 dirs+=" projects/bfxdata" 
 dirs+=" projects/bmxdata" 
 dirs+=" projects/bnbdata" 
 dirs+=" projects/lqddata" 
-dirs+=" projects/huodata" 
 dirs+=" projects/okxdata" 
 dirs+=" projects/btsedata" 
 dirs+=" projects/coinbase" 
