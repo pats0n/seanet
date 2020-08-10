@@ -10,7 +10,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
-" Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -18,15 +17,14 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
 Plugin 'pignacio/vim-yapf-format'
-" Plugin 'davidhalter/jedi-vim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'ncm2/ncm2'
 Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
 Plugin 'ncm2/ncm2-jedi'
 Plugin 'ncm2/ncm2-neosnippet'
-" Plugin 'ncm2/ncm2-github'
 Plugin 'ncm2/ncm2-tmux'
 " Plugin 'ncm2/ncm2-go'
 Plugin 'fatih/vim-go'
@@ -60,6 +58,7 @@ inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
 "fzf.vim
 map <C-P>  :GitFiles<CR>
+map <C-R>  :History<CR>
 
 "yapf-format
 map <C-F> :YapfFullFormat<CR>
@@ -95,19 +94,19 @@ let g:ycm_filetype_blacklist={ 'python':1 }
 let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
-let g:syntastic_always_populate_loc_list=1
+" let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=0
+let g:syntastic_check_on_wq=0
+let g:syntastic_aggregate_errors=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
-let g:syntastic_python_checkers = [ 'pylint' ] 
+let g:syntastic_python_checkers = [ 'mypy', 'pylint'  ] 
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
-
-"ctrlp
-" set wildignore+=*.o,*.o.d,*.a,*.pyc,_*,var
-" let g:ctrlp_show_hidden=1
 
 "fugitive
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
