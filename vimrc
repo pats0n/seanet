@@ -58,7 +58,7 @@ inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
 "fzf.vim
 map <C-P>  :GitFiles<CR>
-map <C-R>  :History<CR>
+" map <C-R>  :History<CR>
 
 "yapf-format
 map <C-F> :YapfFullFormat<CR>
@@ -101,7 +101,6 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
-" let g:ycm_filetype_blacklist={ 'python':1, 'go':1 }
 let g:ycm_filetype_blacklist={ 'python':1 }
 
 "pydoc
