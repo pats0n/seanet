@@ -12,6 +12,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
+Plugin 'myint/syntastic-extras'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -120,6 +121,7 @@ let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
+let g:syntastic_make_checkers = [ 'gnumake' ] 
 
 "fugitive
 set statusline+=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
