@@ -41,7 +41,6 @@ filetype plugin indent on
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
 
-
 set relativenumber nu
 
 set hlsearch
@@ -107,7 +106,6 @@ let g:ycm_filetype_blacklist={ 'python':1 }
 let g:pydoc_open_cmd = 'vsp'
 
 "syntastic
-" let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=0
@@ -141,8 +139,5 @@ command W wa | make -j1
 command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
 
 command SelToClip execute 'call system("xclip",@0)'
-
-command Pylint w | SyntasticCheck pylint
-command MyPy w | SyntasticCheck mypy
 
 command FixIt YcmCompleter FixIt
