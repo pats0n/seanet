@@ -15,6 +15,9 @@ alias blx='cd ~/projects/m3/blx'
 #itb
 alias itb='cd ~/projects/m3/itb'
 
+#srv03
+alias srv03='cd ~/projects/fort/modules/srv03'
+
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
 
