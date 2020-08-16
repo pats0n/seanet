@@ -54,6 +54,8 @@ set splitright
 
 set switchbuf=useopen,usetab,newtab
 
+let g:pydoc_cmd="python3 -m pydoc"
+
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
