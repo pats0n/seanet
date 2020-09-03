@@ -31,6 +31,7 @@ Plugin 'ncm2/ncm2-tmux'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'scrooloose/nerdtree'
 
 
 call vundle#end()
