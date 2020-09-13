@@ -10,7 +10,6 @@ dirs+=" projects/bnbdata"
 dirs+=" projects/lqddata" 
 dirs+=" projects/okxdata" 
 dirs+=" projects/btsedata" 
-dirs+=" projects/coinbase" 
 
 dirs+=" projects/bfl_states" 
 dirs+=" projects/srv02_states" 
