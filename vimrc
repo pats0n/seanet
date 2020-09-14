@@ -63,8 +63,8 @@ let g:pydoc_cmd="python3 -m pydoc"
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
 "fzf.vim
-nnoremap <silent> <C-P>  :GitFiles<CR>
-nnoremap <silent> Q :History<CR>
+nnoremap <silent> <C-P> :GitFiles<CR>
+nnoremap <silent> <C-B> :History<CR>
 
 "yapf-format
 nnoremap <silent> <C-F> :YapfFullFormat<CR>
