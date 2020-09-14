@@ -33,15 +33,18 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
 
-
 call vundle#end()
 
 syntax on
+
+colorscheme ron
 
 filetype plugin indent on
 
 au BufRead,BufNewFile *.ds set filetype=xml
 au BufRead,BufNewFile *.def set filetype=cpp
+
+set encoding=utf-8
 
 set relativenumber nu
 
@@ -60,15 +63,14 @@ let g:pydoc_cmd="python3 -m pydoc"
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
 "fzf.vim
-nnoremap <C-P>  :GitFiles<CR>
-nnoremap <C-B>  :History<CR>
+nnoremap <silent> <C-P> :GitFiles<CR>
+nnoremap <silent> <C-B> :History<CR>
 
 "yapf-format
-map <C-F> :YapfFullFormat<CR>
+nnoremap <silent> <C-F> :YapfFullFormat<CR>
 
 "ncm2
 let blacklist = ['cpp', 'hpp', 'go'] 
-" let blacklist = ['cpp', 'hpp'] 
 autocmd BufEnter * if index(blacklist, &ft) < 0 | call ncm2#enable_for_buffer()
 set completeopt=menuone,noselect,noinsert
 " make it FAST
@@ -96,8 +98,6 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
-
-
 
 "ycm
 let g:ycm_confirm_extra_conf = 0
@@ -132,12 +132,8 @@ set laststatus=2
 let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#enabled = 1
 
-colorscheme ron
-
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
-
-set encoding=utf-8
 
 command W wa | make -j1
 
