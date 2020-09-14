@@ -59,6 +59,9 @@ set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
 
+" nerdtree
+nnoremap <silent> Q :NERDTreeToggle<CR>
+
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
