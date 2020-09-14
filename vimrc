@@ -67,7 +67,7 @@ nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
 
 "yapf-format
-nnoremap <silent> <C-F> :YapfFullFormat<CR>
+au FileType python nnoremap <silent> <buffer> <C-F> :YapfFullFormat<CR>
 
 "ncm2
 let blacklist = ['cpp', 'hpp', 'go'] 
