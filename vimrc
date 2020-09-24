@@ -18,6 +18,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
 Plugin 'pignacio/vim-yapf-format'
+Plugin 'psf/black'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
@@ -59,6 +60,9 @@ set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
 
+" nerdtree
+nnoremap <silent> Q :NERDTreeToggle<CR>
+
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
@@ -67,7 +71,9 @@ nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
 
 "yapf-format
-nnoremap <silent> <C-F> :YapfFullFormat<CR>
+" au FileType python nnoremap <silent> <buffer> <C-F> :YapfFullFormat<CR>
+" black
+au FileType python nnoremap <silent> <buffer> <C-F> :Black<CR>
 
 "ncm2
 let blacklist = ['cpp', 'hpp', 'go'] 
