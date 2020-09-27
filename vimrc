@@ -33,6 +33,7 @@ Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/tagbar'
 
 call vundle#end()
 
