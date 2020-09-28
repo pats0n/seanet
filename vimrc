@@ -61,6 +61,10 @@ set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
 
+" tagbar
+let g:tagbar_position="left"
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
 " nerdtree
 nnoremap <silent> Q :NERDTreeToggle<CR>
 
