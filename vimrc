@@ -22,6 +22,7 @@ Plugin 'psf/black'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'ncm2/ncm2'
 Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
@@ -67,6 +68,15 @@ set splitright
 set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
+
+" jedi-vim
+let g:jedi#auto_initialization = 1
+let g:jedi#completions_enabled = 0
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#smart_auto_mappings = 0
+let g:jedi#popup_on_dot = 0
+let g:jedi#completions_command = ""
+let g:jedi#show_call_signatures = "1"
 
 " tagbar
 let g:tagbar_position="left"
