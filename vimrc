@@ -34,12 +34,13 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'preservim/tagbar'
+Plugin 'dracula/vim'
+Plugin 'jnurmine/Zenburn'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 
 syntax on
-
-colorscheme ron
 
 filetype plugin indent on
 
@@ -49,6 +50,12 @@ au BufRead,BufNewFile *.def set filetype=cpp
 set encoding=utf-8
 
 set relativenumber nu
+
+set termguicolors 
+
+" colorscheme ron
+" colorscheme dracula
+colorscheme gruvbox
 
 set hlsearch
 
@@ -64,10 +71,10 @@ let g:pydoc_cmd="python3 -m pydoc"
 " tagbar
 let g:tagbar_position="left"
 let g:tagbar_autoclose=1
-nnoremap <silent> <F9> :TagbarToggle<CR>
+nnoremap <silent> Q :TagbarToggle<CR>
 
 " nerdtree
-nnoremap <silent> Q :NERDTreeToggle<CR>
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
@@ -104,11 +111,11 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 " \ neosnippet#expandable_or_jumpable() ?
 " \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+            \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
 if has('conceal')
-  set conceallevel=2 concealcursor=niv
+    set conceallevel=2 concealcursor=niv
 endif
 
 "ycm
