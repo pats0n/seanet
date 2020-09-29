@@ -22,6 +22,7 @@ Plugin 'psf/black'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'ncm2/ncm2'
 Plugin 'ncm2/ncm2-path'
 Plugin 'ncm2/ncm2-bufword'
@@ -34,12 +35,13 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'preservim/tagbar'
+Plugin 'dracula/vim'
+Plugin 'jnurmine/Zenburn'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 
 syntax on
-
-colorscheme ron
 
 filetype plugin indent on
 
@@ -49,6 +51,12 @@ au BufRead,BufNewFile *.def set filetype=cpp
 set encoding=utf-8
 
 set relativenumber nu
+
+set termguicolors 
+
+" colorscheme ron
+" colorscheme dracula
+colorscheme gruvbox
 
 set hlsearch
 
@@ -61,13 +69,24 @@ set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
 
+" jedi-vim
+let g:jedi#auto_initialization = 1
+let g:jedi#completions_enabled = 0
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#smart_auto_mappings = 0
+let g:jedi#popup_on_dot = 0
+let g:jedi#completions_command = ""
+let g:jedi#show_call_signatures = "1"
+let g:jedi#use_splits_not_buffers = 'right'
+
 " tagbar
 let g:tagbar_position="left"
 let g:tagbar_autoclose=1
-nnoremap <silent> <F9> :TagbarToggle<CR>
+nnoremap <silent> Q :TagbarToggle<CR>
 
 " nerdtree
-nnoremap <silent> Q :NERDTreeToggle<CR>
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
+let g:NERDTreeQuitOnOpen = 1
 
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
@@ -104,11 +123,11 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 " \ neosnippet#expandable_or_jumpable() ?
 " \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+            \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
 if has('conceal')
-  set conceallevel=2 concealcursor=niv
+    set conceallevel=2 concealcursor=niv
 endif
 
 "ycm
