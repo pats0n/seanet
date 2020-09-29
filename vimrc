@@ -63,6 +63,7 @@ let g:pydoc_cmd="python3 -m pydoc"
 
 " tagbar
 let g:tagbar_position="left"
+let g:tagbar_autoclose=1
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
 " nerdtree
