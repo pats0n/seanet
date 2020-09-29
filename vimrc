@@ -77,6 +77,7 @@ let g:jedi#smart_auto_mappings = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = "1"
+let g:jedi#use_splits_not_buffers = 'right'
 
 " tagbar
 let g:tagbar_position="left"
@@ -85,6 +86,7 @@ nnoremap <silent> Q :TagbarToggle<CR>
 
 " nerdtree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
+let g:NERDTreeQuitOnOpen = 1
 
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
