@@ -91,6 +91,9 @@ let g:NERDTreeQuitOnOpen = 1
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
+"syntastic
+nnoremap <silent> <C-S> :SyntasticCheck<CR>
+
 "fzf.vim
 nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
