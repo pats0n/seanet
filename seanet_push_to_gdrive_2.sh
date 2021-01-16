@@ -7,7 +7,7 @@ dirs+=" projects/huodata"
 dirs+=" projects/bfldata" 
 dirs+=" projects/bfxdata" 
 dirs+=" projects/bmxdata" 
-# dirs+=" projects/bnbdata" 
+dirs+=" projects/bnbdata" 
 dirs+=" projects/lqddata" 
 dirs+=" projects/okxdata" 
 dirs+=" projects/btsedata" 
@@ -16,10 +16,10 @@ dirs+=" projects/btsedata"
 # dirs+=" projects/srv02_states" 
 # dirs+=" projects/srv03_states" 
 
-# dirs+=" projects/btc_zabbix_backup"
-# dirs+=" projects/btc_jenkins_backup"
-# dirs+=" projects/btc_influx_backup"
-# dirs+=" projects/btc_grafana_backup"
+dirs+=" projects/btc_zabbix_backup"
+dirs+=" projects/btc_jenkins_backup"
+dirs+=" projects/btc_influx_backup"
+dirs+=" projects/btc_grafana_backup"
 
 
 for d in $dirs 
