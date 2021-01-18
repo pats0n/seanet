@@ -16,10 +16,14 @@ dirs+=" projects/btsedata"
 # dirs+=" projects/srv02_states" 
 # dirs+=" projects/srv03_states" 
 
-dirs+=" projects/btc_zabbix_backup"
-dirs+=" projects/btc_jenkins_backup"
 dirs+=" projects/btc_influx_backup"
-dirs+=" projects/btc_grafana_backup"
+dirs+=" projects/btc_jenkins_backup"
+
+dirs+=" projects/backup_grafana_analytics01"
+dirs+=" projects/backup_influx_analytics01"
+dirs+=" projects/backup_jenkins_analytics01"
+dirs+=" projects/backup_zabbix_btchub01"
+dirs+=" projects/backup_zabbix_zabbix01"
 
 
 for d in $dirs 
