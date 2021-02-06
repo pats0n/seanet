@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+cd $HOME
+
 dirs=
 dirs+=`find -L  projects/m3_ticks -mindepth 1 -maxdepth 1 -type d`
 dirs+=`find -L  projects/m3_capture -mindepth 1 -maxdepth 1 -type d`
