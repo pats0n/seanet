@@ -1,7 +1,10 @@
 #!/bin/bash
 
-alias vi="nvim -p"
-alias vim="nvim -p"
+# alias vi="nvim -p"
+# alias vim="nvim -p"
+
+alias vi="nvim"
+alias vim="nvim"
 
 #m3
 alias m3='cd ~/projects/m3'
