@@ -4,7 +4,6 @@ mkdir -p ~/gitbackup
 
 date=$(date +%Y%m%d)
 
-
 tar -cf - git-repos/* | gzip - > ~/gitbackup/gitbackup.$date.tar.gz
 
 echo $(date) starting push ...
