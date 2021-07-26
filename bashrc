@@ -15,9 +15,6 @@ alias mdc='cd ~/projects/m3/mdc'
 #blx
 alias blx='cd ~/projects/m3/blx'
 
-#itb
-alias itb='cd ~/projects/m3/itb'
-
 #umm
 alias umm='cd ~/projects/m3/umm'
 
@@ -56,9 +53,6 @@ alias huo='cd ~/projects/fort/modules/huo'
 
 #fort
 alias fort='cd ~/projects/fort'
-
-#cg
-alias cg='cd ~/projects/cg'
 
 #golang
 export GOPATH=$HOME
