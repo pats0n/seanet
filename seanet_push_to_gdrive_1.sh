@@ -2,20 +2,23 @@
 
 dirs=
 
-#dirs+=" photos/publish"
-#dirs+=" photos/public" 
+# dirs+=" photos/publish"
+# dirs+=" photos/public" 
+# dirs+=" photos/private"
+# dirs+=" photos/archive"
 dirs+=" photos/skydiving"
+# dirs+=" photos/lrcat"
 
+dirs+=" videos/dr"
 dirs+=" videos/tunnels"
 dirs+=" videos/skydiving"
-dirs+=" videos/flying"
-dirs+=" videos/dr"
+
+# dirs+=" videos/flying"
 
 dirs+=" music/albums"
 
 # dirs+=" flysight"
 # dirs+=" source"
-
 
 for d in $dirs 
 do
