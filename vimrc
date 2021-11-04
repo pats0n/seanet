@@ -17,7 +17,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-utils/vim-man'
-" Plugin 'pignacio/vim-yapf-format'
 Plugin 'psf/black'
 Plugin 'roxma/nvim-yarp'
 Plugin 'Shougo/neosnippet.vim'
@@ -98,8 +97,6 @@ nnoremap <silent> <C-S> :SyntasticCheck<CR>
 nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
 
-"yapf-format
-" au FileType python nnoremap <silent> <buffer> <C-F> :YapfFullFormat<CR>
 " black
 au FileType python nnoremap <silent> <buffer> <C-F> :Black<CR>
 
@@ -150,7 +147,8 @@ let g:syntastic_check_on_wq=0
 let g:syntastic_aggregate_errors=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
-let g:syntastic_python_checkers = [ 'mypy', 'pylint'  ] 
+" let g:syntastic_python_checkers = [ 'mypy', 'pylint'  ] 
+let g:syntastic_python_checkers = [ 'mypy' ] 
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
