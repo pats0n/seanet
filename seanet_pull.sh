@@ -1,16 +1,16 @@
 
 srv=seanet
 
-dirs='music/albums/'
-dirs+=' videos/skydiving/'
-dirs+=' videos/flying/'
-#dirs+=' photos/publish/'
-#dirs+=' photos/public/'
+dirs=
+dirs+='music/albums/'
+irs+=' photos/publish/'
+dirs+=' photos/public/'
 dirs+=' photos/skydiving/'
 dirs+=' flysight/'
 dirs+=' videos/dr/'
-dirs+=' videos/ifly/'
-dirs+=' videos/flystation/'
+dirs+=' videos/skydiving/'
+dirs+=' videos/flying/'
+ddirs+=' videos/tunnels/'
 
 if [ "${1}k" != 'okk' ]
 then
