@@ -148,7 +148,7 @@ let g:syntastic_aggregate_errors=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
 " let g:syntastic_python_checkers = [ 'mypy', 'pylint'  ] 
-let g:syntastic_python_checkers = [ 'mypy' ] 
+let g:syntastic_python_checkers = [ 'python' , 'mypy' ] 
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
