@@ -6,16 +6,16 @@ dirs=
 # dirs+=" photos/public" 
 # dirs+=" photos/private"
 # dirs+=" photos/archive"
-dirs+=" photos/skydiving"
+# dirs+=" photos/skydiving"
 # dirs+=" photos/lrcat"
 
-dirs+=" videos/dr"
-dirs+=" videos/tunnels"
-dirs+=" videos/skydiving"
+# dirs+=" videos/dr"
+# dirs+=" videos/tunnels"
+# dirs+=" videos/skydiving"
 
 # dirs+=" videos/flying"
 
-dirs+=" music/albums"
+# dirs+=" music/albums"
 
 # dirs+=" flysight"
 # dirs+=" source"
