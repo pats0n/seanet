@@ -1,1 +1,1 @@
-go install github.com/odeke-em/drive/cmd/drive
+go install github.com/odeke-em/drive/cmd/drive@latest
