@@ -90,9 +90,6 @@ let g:NERDTreeQuitOnOpen = 1
 " neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
-"syntastic
-nnoremap <silent> <C-S> :SyntasticCheck<CR>
-
 "fzf.vim
 nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
@@ -151,6 +148,8 @@ let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go']
 
 " let g:syntastic_python_checkers = [ 'python' , 'mypy' , 'pylint'] 
 let g:syntastic_python_checkers = [ 'python' , 'mypy' ] 
+au FileType python nnoremap <silent> <buffer> <leader>sp :SyntasticCheck pylint<CR>
+au FileType python nnoremap <silent> <buffer> <leader>sm :SyntasticCheck mypy<CR>
 
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_pylint_exec = 'pylint'
