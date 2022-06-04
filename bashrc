@@ -19,7 +19,7 @@ alias blx='cd ~/projects/m3/blx'
 alias umm='cd ~/projects/m3/umm'
 
 #srv03
-alias srv01='cd ~/projects/fort/modules/srv03'
+alias srv01='cd ~/projects/fort/modules/srv01'
 
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
