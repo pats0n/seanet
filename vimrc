@@ -37,6 +37,8 @@ Plugin 'preservim/tagbar'
 Plugin 'dracula/vim'
 Plugin 'jnurmine/Zenburn'
 Plugin 'morhetz/gruvbox'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'z0mbix/vim-shfmt'
 
 call vundle#end()
 
@@ -134,7 +136,9 @@ let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
 
 au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoToDeclaration<CR>
-au FileType cpp nnoremap <silent> <buffer> <C-F> :PrettyFormat<CR>
+
+"vim-clang-format
+au FileType cpp nnoremap <silent> <buffer> <C-F> :ClangFormat<CR>
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
@@ -146,7 +150,6 @@ let g:syntastic_check_on_wq=0
 let g:syntastic_aggregate_errors=1
 let g:syntastic_disabled_filetypes = ['cpp' , 'hpp', 'go'] 
 
-" let g:syntastic_python_checkers = [ 'python' , 'mypy' , 'pylint'] 
 let g:syntastic_python_checkers = [ 'python' , 'mypy' ] 
 au FileType python nnoremap <silent> <buffer> <leader>sp :SyntasticCheck pylint<CR>
 au FileType python nnoremap <silent> <buffer> <leader>sm :SyntasticCheck mypy<CR>
@@ -171,7 +174,9 @@ highlight CursorLineNr ctermfg=243
 
 command W wa | make -j1
 
-command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+" command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
+" command ClangFmt execute '%! clang-format'
+" command ShFmt execute '%! shfmt'
 
 command SelToClip execute 'call system("xclip",@0)'
 
