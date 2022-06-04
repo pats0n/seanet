@@ -109,7 +109,6 @@ let ncm2#popup_delay = 5
 let ncm2#complete_length = [[1,1]]
 let g:ncm2#matcher = 'substrfuzzy'
 
-
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -136,6 +135,9 @@ let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
+
+au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoToDeclaration<CR>
+au FileType cpp nnoremap <silent> <buffer> <C-F> :PrettyFormat<CR>
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
