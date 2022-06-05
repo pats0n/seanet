@@ -140,6 +140,9 @@ au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoT
 "vim-clang-format
 au FileType cpp nnoremap <silent> <buffer> <C-F> :ClangFormat<CR>
 
+"vim-shfmt
+au FileType sh nnoremap <silent> <buffer> <C-F> :ShFmt<CR>
+
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
 
