@@ -70,7 +70,7 @@ set switchbuf=useopen,usetab,newtab
 
 let g:pydoc_cmd="python3 -m pydoc"
 
-" jedi-vim
+"jedi-vim
 let g:jedi#auto_initialization = 1
 let g:jedi#completions_enabled = 0
 let g:jedi#auto_vim_configuration = 0
@@ -80,23 +80,23 @@ let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = 0
 let g:jedi#use_splits_not_buffers = 'right'
 
-" tagbar
+"tagbar
 let g:tagbar_position="left"
 let g:tagbar_autoclose=1
 nnoremap <silent> Q :TagbarToggle<CR>
 
-" nerdtree
+"nerdtree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 let g:NERDTreeQuitOnOpen = 1
 
-" neosnippet
+"neosnippet
 inoremap <silent> <expr> <CR> ncm2_neosnippet#expand_or("\<CR>", 'n')
 
 "fzf.vim
 nnoremap <silent> <C-P> :GitFiles<CR>
 nnoremap <silent> <C-B> :History<CR>
 
-" black
+"black
 au FileType python nnoremap <silent> <buffer> <C-F> :Black<CR>
 
 "ncm2
@@ -108,8 +108,8 @@ let ncm2#popup_delay = 5
 let ncm2#complete_length = [[1,1]]
 let g:ncm2#matcher = 'substrfuzzy'
 
-" Plugin key-mappings.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+"Plugin key-mappings.
+"Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
@@ -136,6 +136,7 @@ let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
 
 au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoToDeclaration<CR>
+command FixIt YcmCompleter FixIt
 
 "vim-clang-format
 au FileType cpp nnoremap <silent> <buffer> <C-F> :ClangFormat<CR>
@@ -174,10 +175,5 @@ highlight CursorLineNr ctermfg=243
 
 command W wa | make -j1
 
-" command PrettyFormat execute '%! astyle -A2 -F -S -K -C -q --lineend=linux' | go 1 | %s/{$/{\r/g | %s/\s\+$//e | %s/\n\{3,}/\r\r/e 
-" command ClangFmt execute '%! clang-format'
-" command ShFmt execute '%! shfmt'
-
 command SelToClip execute 'call system("xclip",@0)'
 
-command FixIt YcmCompleter FixIt
