@@ -1,4 +1,5 @@
-cd `dirname $0`
+
+sudo apt install neovim git python3-venv python3-dev cmake g++ clang-format
 
 mkdir -p ~/.config/nvim
 
