@@ -1,6 +1,8 @@
 
 sudo apt install neovim git python3-venv python3-dev cmake g++ clang-format
 
+sudo snap install shfmt
+
 mkdir -p ~/.config/nvim
 
 ln -s  ~/seanet/vimrc  ~/.vimrc
