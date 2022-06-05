@@ -19,7 +19,7 @@ alias blx='cd ~/projects/m3/blx'
 alias umm='cd ~/projects/m3/umm'
 
 #srv03
-alias srv03='cd ~/projects/fort/modules/srv03'
+alias srv01='cd ~/projects/fort/modules/srv01'
 
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
@@ -32,18 +32,6 @@ alias bfl='cd ~/projects/fort/modules/bfl'
 
 #bmx
 alias bmx='cd ~/projects/fort/modules/bmx'
-
-#bnb
-alias bnb='cd ~/projects/fort/modules/bnb'
-
-#bfx
-alias bfx='cd ~/projects/fort/modules/bfx'
-
-#lqd
-alias lqd='cd ~/projects/fort/modules/lqd'
-
-#okx
-alias okx='cd ~/projects/fort/modules/okx'
 
 #btse
 alias btse='cd ~/projects/fort/modules/btse'
