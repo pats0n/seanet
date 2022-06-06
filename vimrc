@@ -39,6 +39,7 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'morhetz/gruvbox'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'z0mbix/vim-shfmt'
+Plugin 'chrisbra/csv.vim'
 
 call vundle#end()
 
