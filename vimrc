@@ -142,7 +142,7 @@ command FixIt YcmCompleter FixIt
 au FileType cpp nnoremap <silent> <buffer> <C-F> :ClangFormat<CR>
 
 "vim-shfmt
-au FileType sh nnoremap <silent> <buffer> <C-F> :ShFmt<CR>
+au FileType sh nnoremap <silent> <buffer> <C-F> :Shfmt<CR>
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
