@@ -69,7 +69,6 @@ set splitright
 
 set switchbuf=useopen,usetab,newtab
 
-let g:pydoc_cmd="python3 -m pydoc"
 
 "jedi-vim
 let g:jedi#auto_initialization = 1
@@ -147,6 +146,7 @@ au FileType sh nnoremap <silent> <buffer> <C-F> :Shfmt<CR>
 
 "pydoc
 let g:pydoc_open_cmd = 'vsp'
+let g:pydoc_cmd="python3 -m pydoc"
 
 "syntastic
 let g:syntastic_auto_loc_list=1
@@ -177,7 +177,7 @@ let g:airline#extensions#tabline#fnamemod= ':t'
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
 
-command W wa | make -j1
+set makeprg=make\ -C\ `git\ rev-parse\ --show-toplevel`\ -j1
 
 command SelToClip execute 'call system("xclip",@0)'
 
