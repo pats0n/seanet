@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
         args.append(sys.argv[-1])
 
-    os.chdir("/home/asafonov/projects/fort")
+    os.chdir(os.path.expanduser("~/projects/fort"))
 
     logging.error(args)
     p = sp.Popen(args)
