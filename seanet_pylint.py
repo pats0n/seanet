@@ -2,22 +2,36 @@
 
 import os
 import sys
+import logging
 import subprocess as sp
 
 if __name__ == "__main__":
 
-    f = sys.argv[1]
+    args = []
 
-    print(" ".join(sys.argv[1:]))
+    args.append("pylint")
 
-    # if f == "--version":
-    #     sp.run("pylint --version", shell=True)
+    for a in sys.argv[1:-1]:
 
-    # f = os.path.realpath(f)
+        args.append(a)
 
-    # os.chdir("/home/asafonov/projects/fort")
+    if len(sys.argv) > 2:
 
-    # p = sp.run(f"pylint {f}", shell=True)
-    p = sp.run(f"pylint {' '.join(sys.argv[1:])}", shell=True)
+        f = sys.argv[-1]
+
+        f = os.path.realpath(f)
+
+        args.append(f)
+
+    else:
+
+        args.append(sys.argv[-1])
+
+    os.chdir("/home/asafonov/projects/fort")
+
+    logging.error(args)
+    p = sp.Popen(args)
+
+    p.wait()
 
     sys.exit(p.returncode)
