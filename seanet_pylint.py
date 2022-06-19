@@ -5,6 +5,8 @@ import sys
 import logging
 import subprocess as sp
 
+# seanet_pylint.py -f text --msg-template="{path}:{line}:{column}:{C}: [{symbol}] {msg}" -r n mdc_feed_capture.py
+
 if __name__ == "__main__":
 
     args = []
@@ -22,12 +24,14 @@ if __name__ == "__main__":
         f = os.path.realpath(f)
 
         args.append(f)
+        dir_ = sp.check_output("git rev-parse --show-toplevel", shell=True).decode("utf-8").strip()
+        os.chdir(dir_)
 
     else:
 
         args.append(sys.argv[-1])
 
-    os.chdir(os.path.expanduser("~/projects/fort"))
+    # os.chdir(os.path.expanduser("~/projects/fort"))
 
     logging.error(args)
     p = sp.Popen(args)
