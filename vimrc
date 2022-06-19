@@ -40,6 +40,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'z0mbix/vim-shfmt'
 Plugin 'chrisbra/csv.vim'
+Plugin 'tpope/vim-rhubarb'
+
 
 call vundle#end()
 
@@ -160,7 +162,8 @@ au FileType python nnoremap <silent> <buffer> <leader>sp :SyntasticCheck pylint<
 au FileType python nnoremap <silent> <buffer> <leader>sm :SyntasticCheck mypy<CR>
 
 let g:syntastic_python_python_exec = 'python3'
-let g:syntastic_python_pylint_exec = '~/seanet/seanet_pylint.sh'
+" let g:syntastic_python_pylint_exec = '/home/asafonov/seanet/seanet_pylint.py'
+let g:syntastic_python_pylint_exec = 'pylint'
 
 let g:syntastic_xml_checkers = [ 'xmllint' ] 
 let g:syntastic_make_checkers = [ 'gnumake' ] 
