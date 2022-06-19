@@ -40,6 +40,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'z0mbix/vim-shfmt'
 Plugin 'chrisbra/csv.vim'
+Plugin 'tpope/vim-rhubarb'
+
 
 call vundle#end()
 
