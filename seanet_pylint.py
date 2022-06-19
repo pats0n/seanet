@@ -2,22 +2,40 @@
 
 import os
 import sys
+import logging
 import subprocess as sp
+
+# seanet_pylint.py -f text --msg-template="{path}:{line}:{column}:{C}: [{symbol}] {msg}" -r n mdc_feed_capture.py
 
 if __name__ == "__main__":
 
-    f = sys.argv[1]
+    args = []
 
-    print(" ".join(sys.argv[1:]))
+    args.append("pylint")
 
-    # if f == "--version":
-    #     sp.run("pylint --version", shell=True)
+    for a in sys.argv[1:-1]:
 
-    # f = os.path.realpath(f)
+        args.append(a)
 
-    # os.chdir("/home/asafonov/projects/fort")
+    if len(sys.argv) > 2:
 
-    # p = sp.run(f"pylint {f}", shell=True)
-    p = sp.run(f"pylint {' '.join(sys.argv[1:])}", shell=True)
+        f = sys.argv[-1]
+
+        f = os.path.realpath(f)
+
+        args.append(f)
+        dir_ = sp.check_output("git rev-parse --show-toplevel", shell=True).decode("utf-8").strip()
+        os.chdir(dir_)
+
+    else:
+
+        args.append(sys.argv[-1])
+
+    # os.chdir(os.path.expanduser("~/projects/fort"))
+
+    logging.error(args)
+    p = sp.Popen(args)
+
+    p.wait()
 
     sys.exit(p.returncode)

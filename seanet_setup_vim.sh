@@ -1,9 +1,9 @@
 
-sudo apt install neovim git python3-venv python3-dev cmake g++ clang-format
+sudo apt install git python3-venv python3-dev cmake g++ clang-format
 
 sudo snap install shfmt
 
-sudo pip3 install jedi black pylint mypy
+sudo pip3 install jedi black pylint mypy pynvim
 
 mkdir -p ~/.config/nvim
 
