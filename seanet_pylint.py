@@ -8,13 +8,16 @@ if __name__ == "__main__":
 
     f = sys.argv[1]
 
-    if f == "--version":
-        sp.run("pylint --version", shell=True)
+    print(" ".join(sys.argv[1:]))
 
-    f = os.path.realpath(f)
+    # if f == "--version":
+    #     sp.run("pylint --version", shell=True)
 
-    os.chdir("/home/asafonov/projects/fort")
+    # f = os.path.realpath(f)
 
-    p = sp.run(f"pylint {f}", shell=True)
+    # os.chdir("/home/asafonov/projects/fort")
+
+    # p = sp.run(f"pylint {f}", shell=True)
+    p = sp.run(f"pylint {' '.join(sys.argv[1:])}", shell=True)
 
     sys.exit(p.returncode)
