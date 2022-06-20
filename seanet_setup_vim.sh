@@ -7,7 +7,7 @@ wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb
 
 sudo dpkg -i nvim-linux64.deb
 
-sudo apt install git python3-venv python3-dev cmake g++ clang-format
+sudo apt install git python3-venv python3-dev cmake g++ clang-format xclip
 
 sudo snap install shfmt
 
