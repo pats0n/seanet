@@ -30,8 +30,8 @@ alias strats='cd ~/projects/fort/modules/strats'
 #bfl
 alias bfl='cd ~/projects/fort/modules/bfl'
 
-#bmx
-alias bmx='cd ~/projects/fort/modules/bmx'
+#ftx
+alias ftx='cd ~/projects/fort/modules/ftx'
 
 #btse
 alias btse='cd ~/projects/fort/modules/btse'
