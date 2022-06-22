@@ -180,7 +180,9 @@ let g:airline#extensions#tabline#fnamemod= ':t'
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=243
 
-set makeprg=make\ -C\ `git\ rev-parse\ --show-toplevel`\ -j1
+"make
+set makeprg=make\ -C\ `git\ rev-parse\ --show-toplevel`\ 
+command Gmake make -j1
 
 command SelToClip execute 'call system("xclip",@0)'
 
