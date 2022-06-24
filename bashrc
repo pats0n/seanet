@@ -27,6 +27,9 @@ alias mixer='cd ~/projects/fort/modules/mixer'
 #strats
 alias strats='cd ~/projects/fort/modules/strats'
 
+#strat
+alias strat='cd ~/projects/fort/modules/strats/ftx_eth_bp_ts'
+
 #bfl
 alias bfl='cd ~/projects/fort/modules/bfl'
 
