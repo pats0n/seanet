@@ -138,6 +138,9 @@ let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
 
 au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoToDeclaration<CR>
+au FileType cpp nnoremap <silent> <buffer> <leader>D :vsplit \| YcmCompleter GoToDefinition<CR>
+au FileType cpp nnoremap <silent> <buffer> <leader>i :vsplit \| YcmCompleter GoToInclude<CR>
+au FileType cpp nnoremap <silent> <buffer> <leader>g :vsplit \| YcmCompleter GoTo<CR>
 command FixIt YcmCompleter FixIt
 
 "vim-clang-format
