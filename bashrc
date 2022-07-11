@@ -12,13 +12,7 @@ alias m3='cd ~/projects/fort/m3'
 #mdc
 alias mdc='cd ~/projects/fort/m3/mdc'
 
-#blx
-alias blx='cd ~/projects/m3/blx'
-
-#umm
-alias umm='cd ~/projects/m3/umm'
-
-#srv03
+#srv01
 alias srv01='cd ~/projects/fort/modules/srv01'
 
 #mixer
@@ -33,17 +27,8 @@ alias strat='cd ~/projects/fort/modules/strats/strat_bp_ts'
 #live
 alias live=' cd ~/projects/fort/modules/strats/live/ftx_eth_bp_ts'
 
-#bfl
-alias bfl='cd ~/projects/fort/modules/bfl'
-
 #ftx
 alias ftx='cd ~/projects/fort/modules/ftx'
-
-#btse
-alias btse='cd ~/projects/fort/modules/btse'
-
-#huo
-alias huo='cd ~/projects/fort/modules/huo'
 
 #fort
 alias fort='cd ~/projects/fort'
