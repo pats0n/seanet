@@ -7,10 +7,10 @@ alias vi="nvim"
 alias vim="nvim"
 
 #m3
-alias m3='cd ~/projects/m3'
+alias m3='cd ~/projects/fort/m3'
 
 #mdc
-alias mdc='cd ~/projects/m3/mdc'
+alias mdc='cd ~/projects/fort/m3/mdc'
 
 #blx
 alias blx='cd ~/projects/m3/blx'
