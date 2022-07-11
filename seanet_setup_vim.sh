@@ -9,7 +9,7 @@ sudo dpkg -i nvim-linux64.deb
 
 sudo apt update
 
-sudo apt install git python3-pip python3-venv python3-dev cmake g++ clang-format xclip libxml2-utils
+sudo apt install git python3-pip python3-venv python3-dev cmake g++ clang-format xclip libxml2-utils exuberant-ctags
 
 sudo snap install shfmt
 
