@@ -8,9 +8,9 @@ sudo dpkg -i nvim-linux64.deb
 
 sudo apt update
 
-sudo apt install git python3-pip python3-venv python3-dev cmake g++ clang-format xclip libxml2-utils exuberant-ctags
+sudo apt install git python3-pip python3-venv python3-dev cmake g++ clang-format xclip libxml2-utils exuberant-ctags shfmt
 
-sudo snap install shfmt
+# sudo snap install shfmt
 
 sudo pip3 install jedi black pylint mypy pynvim
 
