@@ -1,4 +1,3 @@
-
 mkdir -p $HOME/downloads
 
 cd $HOME/downloads
@@ -18,18 +17,16 @@ sudo pip3 install jedi black pylint mypy pynvim
 mkdir -p ~/.config/nvim
 
 # ln -s  ~/seanet/vimrc  ~/.vimrc
-ln -s  ~/seanet/vimrc  ~/.config/nvim/init.vim
+ln -s ~/seanet/vimrc ~/.config/nvim/init.vim
 
 mkdir -p ~/.vim/bundle
 
 cd ~/.vim/bundle
 
-git clone https://github.com/gmarik/Vundle.vim 
-
+git clone https://github.com/gmarik/Vundle.vim
 
 nvim +VundleInstall
 
 cd ~/.vim/bundle/YouCompleteMe
 
 ./install.py --clang-completer
-

@@ -24,7 +24,11 @@ if __name__ == "__main__":
         f = os.path.realpath(f)
 
         args.append(f)
-        dir_ = sp.check_output("git rev-parse --show-toplevel", shell=True).decode("utf-8").strip()
+        dir_ = (
+            sp.check_output("git rev-parse --show-toplevel", shell=True)
+            .decode("utf-8")
+            .strip()
+        )
         os.chdir(dir_)
 
     else:
