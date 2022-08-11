@@ -75,3 +75,5 @@ esac
 
 alias Gmake="make -C \`git rev-parse --show-toplevel\`"
 alias gitfclean='git submodule foreach git clean -xdf'
+
+PROMPT_COMMAND='echo -en "\033]0;`hostname`\a"'
