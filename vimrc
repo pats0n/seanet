@@ -102,7 +102,7 @@ nnoremap <silent> <C-B> :History<CR>
 au FileType python nnoremap <silent> <buffer> <C-F> :Black<CR>
 
 "ncm2
-let blacklist = ['cpp', 'hpp', 'go'] 
+let blacklist = ['cpp', 'hpp', 'go', 'sh'] 
 autocmd BufEnter * if index(blacklist, &ft) < 0 | call ncm2#enable_for_buffer()
 set completeopt=menuone,noselect,noinsert
 " make it FAST
