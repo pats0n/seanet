@@ -14,6 +14,9 @@ alias mdc='cd ~/projects/fort/m3/mdc'
 
 #srv01
 alias srv01='cd ~/projects/fort/modules/srv01'
+#srv02
+alias srv02='cd ~/projects/fort/modules/srv02'
+
 
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
