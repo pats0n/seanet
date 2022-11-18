@@ -31,7 +31,7 @@ alias todd='cd ~/projects/fort/modules/todd'
 alias ftx='cd ~/projects/fort/modules/ftx'
 
 #dydx
-alias ftx='cd ~/projects/fort/modules/dydx'
+alias dydx='cd ~/projects/fort/modules/dydx'
 
 
 #fort
