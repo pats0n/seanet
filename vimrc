@@ -29,7 +29,7 @@ Plugin 'ncm2/ncm2-jedi'
 Plugin 'ncm2/ncm2-neosnippet'
 Plugin 'ncm2/ncm2-tmux'
 " Plugin 'ncm2/ncm2-go'
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
@@ -41,6 +41,7 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'z0mbix/vim-shfmt'
 Plugin 'chrisbra/csv.vim'
 Plugin 'tpope/vim-rhubarb'
+Plugin 'github/copilot.vim'
 
 
 call vundle#end()
@@ -102,7 +103,8 @@ nnoremap <silent> <C-B> :History<CR>
 au FileType python nnoremap <silent> <buffer> <C-F> :Black<CR>
 
 "ncm2
-let blacklist = ['cpp', 'hpp', 'go', 'sh'] 
+" let blacklist = ['cpp', 'hpp', 'go', 'sh', 'python'] 
+let blacklist = ['cpp', 'hpp', 'go'] 
 autocmd BufEnter * if index(blacklist, &ft) < 0 | call ncm2#enable_for_buffer()
 set completeopt=menuone,noselect,noinsert
 " make it FAST
@@ -136,6 +138,7 @@ let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_always_populate_location_list=1
 let g:ycm_python_binary_path='python3'
 let g:ycm_filetype_blacklist={ 'python':1 }
+let g:ycm_filetype_blacklist={ 'sh':1 }
 
 au FileType cpp nnoremap <silent> <buffer> <leader>d :vsplit \| YcmCompleter GoToDeclaration<CR>
 au FileType cpp nnoremap <silent> <buffer> <leader>D :vsplit \| YcmCompleter GoToDefinition<CR>
