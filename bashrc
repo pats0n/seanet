@@ -21,9 +21,6 @@ alias srv02='cd ~/projects/fort/modules/srv02'
 #mixer
 alias mixer='cd ~/projects/fort/modules/mixer'
 
-#strats
-alias strats='cd ~/projects/fort/modules/strats'
-
 #todd
 alias todd='cd ~/projects/fort/modules/todd'
 
